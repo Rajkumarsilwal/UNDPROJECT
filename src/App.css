@@ -1,0 +1,60 @@
+/* General styling */
+.App {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+/* Styling for the logo inside AppBar */
+.App-logo {
+  height: 6vmin; /* Flexible logo size, adjusts based on viewport size */
+  background-color: #000; /* Gray background for the logo */
+  padding: 5px; /* Optional: adds some space around the logo */
+  pointer-events: none; /* Makes the logo unclickable */
+  max-height: 40px; /* Limits the maximum size for larger screens */
+  width: auto; /* Ensures the aspect ratio of the logo is preserved */
+}
+/* Main content section */
+.MainContent {
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* PresidentEndorsement font for PresidentEndorsement  */
+body {
+  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Specific styles for PresidentEndorsement */
+/* h1 for main heading i.e: President's Endorsement */
+.president-endorsement h1 {
+  font-size: 43px;
+  font-weight: bold;
+  text-align: left;
+  white-space: normal; /* Allow text to wrap to the next line */
+  word-wrap: break-word; /* Ensure long words break properly */
+  overflow-wrap: break-word; /* For better browser compatibility */
+}
+
+/* h2 for secondary heading i.e. message from the president
+   and Campaign Goals */
+.president-endorsement h2 {
+  font-size: 33px;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* h3 for heading under Campiagn Goals */
+.president-endorsement h3 {
+  font-size: 30px;
+  font-weight: bold;
+  text-align: left;
+}
+
+.president-endorsement p {
+  font-size: 18px;
+  text-align: justify;
+  margin-bottom: 20px;
+}
