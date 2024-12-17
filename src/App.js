@@ -2,7 +2,6 @@ import React from 'react';
 import { AppBar, Toolbar, Container, Box, Typography } from '@mui/material';
 import './App.css';
 import logo from './logo.svg';
-import SearchBar from './components/SearchBar';
 import { PresidentEndorsement } from './components/PresidentEndorsement';
 import { AboutPresident } from './components/AboutPresident';
 import { NavigationLinks } from './components/NavigationLinks';
@@ -40,8 +39,6 @@ function App() {
                 }}
               />
             </Box>
-            {/* Search Component */}
-            <SearchBar />
           </Toolbar>
         </Container>
 
@@ -61,9 +58,9 @@ function App() {
       </AppBar>
 
       {/* Tagline Section */}
-      <Box sx={{ textAlign: 'center', mt: 2, mb: 4 }}> {/* Margin for spacing */}
+      <Box sx={{ textAlign: 'center', mt: 2, mb: 4 }}> 
         <Typography
-          variant="h5" // Slightly larger font size
+          variant="h5"
           sx={{
             fontWeight: 'bold',
             color: 'black',
@@ -79,7 +76,7 @@ function App() {
       <Container
         maxWidth="lg"
         sx={{
-          flex: 1, // Makes the content fill the remaining space
+          flex: 1, 
           marginTop: '20px',
           marginBottom: '40px',
         }}

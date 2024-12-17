@@ -1,26 +1,28 @@
+
+import moment from 'moment-timezone';
+
 export const fetchPosts9Days = async () => {
-    const today = new Date();
-    let allPosts = [];
-  
-    for (let i = 0; i < 3; i++) {
-      const fromDate = new Date();
-      fromDate.setUTCDate(today.getUTCDate() - (3 * i + 2)); // Subtract in UTC
-      const toDate = new Date();
-      toDate.setUTCDate(today.getUTCDate() - 3 * i);
-  
-      const from = fromDate.toISOString().split("T")[0]; // Convert to UTC YYYY-MM-DD
-      const to = toDate.toISOString().split("T")[0];     // Convert to UTC YYYY-MM-DD
-  
-      try {
-        const response = await fetch(
-          `https://apps.und.edu/demo/public/index.php/post?from=${from}&to=${to}`
-        );
-        const data = await response.json();
-        allPosts = [...allPosts, ...data];
-      } catch (error) {
-        console.error("Error fetching posts:", error);
-      }
+  const allPosts = []; 
+  const today = moment().tz('UTC'); // Get the current date in UTC
+
+  for (let i = 0; i < 3; i++) {
+    // Calculate 3-day date ranges in UTC
+    const fromDate = today.clone().subtract(3 * i + 2, 'days').format('YYYY-MM-DD');
+    const toDate = today.clone().subtract(3 * i, 'days').format('YYYY-MM-DD');
+
+    try {
+      const response = await fetch(
+        `https://apps.und.edu/demo/public/index.php/post?from=${encodeURIComponent(fromDate)}&to=${encodeURIComponent(toDate)}`
+      );
+      const data = await response.json();
+      allPosts.push(...data);
+    } catch (error) {
+      console.error('Error fetching posts:', error);
     }
-    return allPosts;
-  };
-  
+  }
+  // Sort posts based on the latest date and time so it will post the latest date
+  allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  return allPosts; 
+};
+

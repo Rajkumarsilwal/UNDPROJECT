@@ -1,8 +1,8 @@
 import React from 'react';
 import { Box, Typography } from '@mui/material';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css'; // For image optimization
-import PresidentImage from '../pImage.jpg'; // Import the image directly
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import PresidentImage from '../pImage.jpg'; 
 
 export const AboutPresident = () => {
   return (
@@ -19,8 +19,8 @@ export const AboutPresident = () => {
       {/* Lazy loading of image for optimization */}
       <LazyLoadImage
         src={PresidentImage}
-        alt="President"
-        effect="blur" 
+        alt='President'
+        effect='blur' 
         style={{
           width: '100%',
           height: 'auto',
@@ -31,12 +31,12 @@ export const AboutPresident = () => {
       />
 
       {/* Text Section */}
-      <Typography variant="h4" gutterBottom>
+      <Typography variant='h4' gutterBottom>
         About The President
       </Typography>
       <Typography
-        variant="body1"
-        color="text.secondary"
+        variant='body1'
+        color='text.secondary'
         gutterBottom
         sx={{
           textAlign: 'justify',

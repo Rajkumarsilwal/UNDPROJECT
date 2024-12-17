@@ -10,6 +10,7 @@
     "babel": "^5.8.38",
     "cra-template": "1.2.0",
     "eslint": "^8.57.1",
+    "moment-timezone": "^0.5.46",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-lazy-load-image-component": "^1.6.3",
