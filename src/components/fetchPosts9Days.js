@@ -1,4 +1,3 @@
-
 import moment from 'moment-timezone';
 
 export const fetchPosts9Days = async () => {
@@ -14,6 +13,10 @@ export const fetchPosts9Days = async () => {
       const response = await fetch(
         `https://apps.und.edu/demo/public/index.php/post?from=${encodeURIComponent(fromDate)}&to=${encodeURIComponent(toDate)}`
       );
+      // Throw an error if the API doesn't return a status of 200
+      if (response.status !== 200) {
+        throw new Error('Server responded unexpectedly');
+      }
       const data = await response.json();
       allPosts.push(...data);
     } catch (error) {
@@ -25,4 +28,5 @@ export const fetchPosts9Days = async () => {
 
   return allPosts; 
 };
+
 
