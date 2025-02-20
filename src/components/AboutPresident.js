@@ -44,7 +44,7 @@ export const AboutPresident = () => {
         }}
       >
         Dr. Andrew Armacost was chosen by the State Board of Higher Education to
-        serve as the University of North Dakota’s 13th president. Armacost began
+        serve as the University of North Dakota’s UND 13th president. Armacost began
         his tenure as UND President on June 1, 2020. Armacost served as the Dean
         of the Faculty at the U.S. Air Force Academy. With more than 30 years on
         active duty and 20 years at the Academy, Armacost served in the rank of
