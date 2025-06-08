@@ -414,7 +414,13 @@ function App() {
       }}
     >
       {/* Header */}
-      <AppBar position="sticky" sx={{ backgroundColor: 'black', position: 'relative' }}>
+      <AppBar
+        position="fixed" // change from "sticky" to "fixed"
+        sx={{
+          backgroundColor: 'black',
+          zIndex: 1300, // keep it above other elements like Chatbot
+        }}
+      >
         <Container maxWidth="lg" disableGutters>
           <Toolbar
             sx={{
@@ -424,17 +430,8 @@ function App() {
               px: 2,
             }}
           >
-            <Box
-              sx={{
-                display: 'flex',
-                alignItems: 'center',
-                gap: 2,
-              }}
-            >
-              {/* Show hamburger menu only on mobile (≤1023px) */}
+            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
               {isMobile && <MobileMenu />}
-
-              {/* UND Logo */}
               <img
                 src={logo}
                 alt="Logo"
@@ -448,9 +445,8 @@ function App() {
           </Toolbar>
         </Container>
 
-        {/* Show desktop navigation links only on desktop (>1023px) */}
         {isDesktop && (
-          <Box sx={{ backgroundColor: '#FFF' }}>
+          <Box sx={{ backgroundColor: '#FFF', borderTop: '1px solid #333' }}>
             <Box
               sx={{
                 display: 'flex',
@@ -466,7 +462,7 @@ function App() {
       </AppBar>
 
       {/* Tagline Section */}
-      <Box sx={{ textAlign: 'center', mt: 2, mb: 4 }}>
+      <Box sx={{ textAlign: 'center', mt: isDesktop ? '160px' : '90px', mb: 4 }}>
         <Typography
           variant="h5"
           sx={{
