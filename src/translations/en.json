@@ -1,0 +1,36 @@
+{
+    "president": {
+        "presidentsEndorsement": "President's Endorsement",
+        "messageFromPresident": "Message from the President",
+        "messageContent": "We are thrilled to announce our unwavering support for the University's latest social media campaign. This initiative signifies a crucial opportunity for our community to unite, interact, and effect significant change. Have thoughts or feedback on our campaign goals? We'd love to hear from you!",
+        "campaignGoals": "Campaign Goals",
+        "goal1Title": "Empowering Engagement",
+        "goal1Content": "Our primary aim is to foster a vibrant online community where every voice is heard and valued...",
+        "goal2Title": "Promoting Diversity and Inclusion",
+        "goal2Content": "Diversity is our strength, and inclusivity is our foundation...",
+        "goal3Title": "Driving Innovation",
+        "goal3Content": "Innovation drives progress, and social media is a powerful tool for sparking creativity..."
+    },
+    "nav": [
+        {
+            "name": "ACADEMICS",
+            "url": "https://und.edu/academics/index.html"
+        },
+        {
+            "name": "ADMISSIONS",
+            "url": "https://und.edu/admissions/index.html"
+        },
+        {
+            "name": "RESEARCH",
+            "url": "https://und.edu/research/index.html"
+        },
+        {
+            "name": "PROGRAMS",
+            "url": "https://und.edu/programs/index.html"
+        },
+        {
+            "name": "ABOUT",
+            "url": "https://und.edu/about/index.html"
+        }
+    ]
+}

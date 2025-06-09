@@ -19,7 +19,7 @@ const navLinks = [
     { name: 'ABOUT', url: 'https://und.edu/about/index.html' },
 ];
 
-export const MobileMenu = () => {
+const MobileMenu = () => {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const handleToggle = () => {
@@ -33,15 +33,15 @@ export const MobileMenu = () => {
                 onClick={handleToggle}
                 sx={{
                     color: '#009A44',       // green color for icon
-                    fontSize: 36,           // bigger icon size
+                    fontSize: 40,           // bigger icon size
                     width: 48,              // bigger clickable area width
-                    height: 48,             // bigger clickable area height
+                    height: 55,             // bigger clickable area height
                 }}
             >
                 {menuOpen ? (
-                    <CloseIcon sx={{ fontSize: 36 }} />
+                    <CloseIcon sx={{ fontSize: 40 }} />
                 ) : (
-                    <MenuIcon sx={{ fontSize: 36 }} />
+                    <MenuIcon sx={{ fontSize: 50 }} />
                 )}
             </IconButton>
 
@@ -101,3 +101,7 @@ export const MobileMenu = () => {
         </Box>
     );
 };
+
+export default MobileMenu;
+
+

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Container, Typography, Link } from '@mui/material';
-import '../App.css'; 
+import '../App.css';
 
 export const Footer = () => {
   return (
@@ -25,10 +25,10 @@ export const Footer = () => {
           {/* Call-to-Action */}
           <Box>
             <Typography
-              variant='body1' 
+              variant='body1'
               align='center'
               sx={{
-                fontSize: '1.2rem', 
+                fontSize: '1.2rem',
                 fontWeight: 'bold',
               }}
             >
@@ -41,7 +41,7 @@ export const Footer = () => {
                   fontWeight: 'bold',
                   fontSize: '1.2rem',
                   '&:hover': {
-                    color: 'green', 
+                    color: '#009A44 ',
                   },
                 }}
               >
