@@ -13,11 +13,13 @@ import { PresidentEndorsement } from './components/PresidentEndorsement';
 import { AboutPresident } from './components/AboutPresident';
 import { Footer } from './components/Footer';
 import PostList from './components/PostList';
-import Chatbot from './components/chatbot';
+// import Chatbot from './components/chatbot';
 import NavigationLinks from './components/Navbar/NormalMenu/NormalMenuBar';
 import MobileMenu from './components/Navbar/MobileMenu/MobileMenu';
+import Chatbot from './components/ChatBox/ChatBot';
 // import MobileMenu from './components/MobileMenu';
 // import NavigationLinks from './components/NavigationLinks';
+
 
 
 function App() {
