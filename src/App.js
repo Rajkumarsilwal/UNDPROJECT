@@ -37,7 +37,7 @@ function App() {
     >
       {/* Header */}
       <AppBar
-        position="fixed" // change from "sticky" to "fixed"
+        position="fixed" // For fixed 
         sx={{
           backgroundColor: 'black',
           zIndex: 1300, // keep it above other elements like Chatbot
@@ -54,15 +54,18 @@ function App() {
           >
             <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
               {isMobile && <MobileMenu />}
-              <img
+              <Box
+                component="img"
                 src={logo}
                 alt="Logo"
-                style={{
-                  maxWidth: '100%',
+                sx={{
+                  height: { xs: 35, sm: 45, md: 60 }, // scale with screen size
                   width: 'auto',
-                  height: '45px',
+                  maxWidth: '100%',
                 }}
               />
+
+
             </Box>
           </Toolbar>
         </Container>
@@ -91,7 +94,7 @@ function App() {
             fontWeight: 'bold',
             color: 'black',
             fontFamily: 'arial',
-            fontSize: { xs: '2rem', sm: '3rem', md: '3.5rem' },
+            fontSize: { xs: '2.8rem', sm: '3rem', md: '3.5rem' },
           }}
         >
           "Leading With Purpose"
