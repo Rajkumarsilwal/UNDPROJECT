@@ -29,9 +29,24 @@ const Chatbot = () => {
         } else if (lowerInput.includes('name')) {
             botResponse = "I'm your virtual assistant chatbot.";
         } else {
-            botResponse = "I am unable to answer. Sorry";
+            try {
+                const chatgptResponse = await fetch('http://localhost:8000/chatbot', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ message: input }),
+                });
+                if (!chatgptResponse.ok) {
+                    console.error('HTTP error:', chatgptResponse.status);
+                    botResponse = 'Sorry, something went wrong with the AI.';
+                } else {
+                    const data = await chatgptResponse.json();
+                    botResponse = data?.response;
+                }
+            } catch (error) {
+                console.error('Fetch error:', error);
+                botResponse = 'Sorry, I could not connect to AI right now.';
+            }
         }
-
         setMessages(prev => [...prev, { fromUser: false, text: botResponse }]);
     };
 
