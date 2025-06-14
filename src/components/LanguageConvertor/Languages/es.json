@@ -1,0 +1,36 @@
+{
+    "president": {
+        "presidentsEndorsement": "Apoyo del Presidente",
+        "messageFromPresident": "Mensaje del Presidente",
+        "messageContent": "Estamos encantados de anunciar nuestro apoyo inquebrantable a la última campaña de redes sociales de la Universidad. Esta iniciativa representa una oportunidad crucial para que nuestra comunidad se una, interactúe y genere un cambio significativo. ¿Tiene opiniones o comentarios sobre los objetivos de nuestra campaña? ¡Nos encantaría escucharle!",
+        "campaignGoals": "Objetivos de la Campaña",
+        "goal1Title": "Fomentar la Participación",
+        "goal1Content": "Nuestro principal objetivo es fomentar una comunidad en línea vibrante donde cada voz sea escuchada y valorada...",
+        "goal2Title": "Promover la Diversidad e Inclusión",
+        "goal2Content": "La diversidad es nuestra fortaleza y la inclusión es nuestra base...",
+        "goal3Title": "Impulsar la Innovación",
+        "goal3Content": "La innovación impulsa el progreso y las redes sociales son una herramienta poderosa para fomentar la creatividad..."
+    },
+    "nav": [
+        {
+            "name": "ACADEMIA",
+            "url": "https://und.edu/academics/index.html"
+        },
+        {
+            "name": "ADMISIONES",
+            "url": "https://und.edu/admissions/index.html"
+        },
+        {
+            "name": "INVESTIGACIÓN",
+            "url": "https://und.edu/research/index.html"
+        },
+        {
+            "name": "PROGRAMAS",
+            "url": "https://und.edu/programs/index.html"
+        },
+        {
+            "name": "SOBRE NOSOTROS",
+            "url": "https://und.edu/about/index.html"
+        }
+    ]
+}
