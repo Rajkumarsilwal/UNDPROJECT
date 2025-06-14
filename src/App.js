@@ -16,7 +16,7 @@ import PostList from './components/PostList';
 import NavigationLinks from './components/Navbar/NormalMenu/NormalMenuBar';
 import MobileMenu from './components/Navbar/MobileMenu/MobileMenu';
 import Chatbot from './components/ChatBox/ChatBot';
-import LanguageSwitcher from './components/LanguageConvertor/LanguageSwitcher';
+import LanguageSwitcher from './components/LanguageConvertor/LanguageSwitcher/LanguageSwitcher';
 
 
 
