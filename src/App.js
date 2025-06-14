@@ -50,14 +50,15 @@ function App() {
               px: 2,
             }}
           >
-            <Box sx={{ display: 'flex', alignItems: 'center', gap: 2 }}>
+            <Box className="UND-Logo-Gap-Size"
+              sx={{ display: 'flex', alignItems: 'center', gap: '3px' }}>
               {isMobile && <MobileMenu />}
               <Box
                 component="img"
                 src={logo}
                 alt="Logo"
                 sx={{
-                  height: { xs: 35, sm: 45, md: 60 }, // scale with screen size
+                  height: { xs: 26, sm: 45, md: 60 }, // scale with screen size
                   width: 'auto',
                   maxWidth: '100%',
                 }}
