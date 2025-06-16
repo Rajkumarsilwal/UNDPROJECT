@@ -1,19 +1,19 @@
 {
     "president": {
-        "presidentsEndorsement": "Apoyo del Presidente",
+        "presidentsEndorsement": "Respaldo del Presidente",
         "messageFromPresident": "Mensaje del Presidente",
-        "messageContent": "Estamos encantados de anunciar nuestro apoyo inquebrantable a la última campaña de redes sociales de la Universidad. Esta iniciativa representa una oportunidad crucial para que nuestra comunidad se una, interactúe y genere un cambio significativo. ¿Tiene opiniones o comentarios sobre los objetivos de nuestra campaña? ¡Nos encantaría escucharle!",
+        "messageContent": "Estamos encantados de anunciar nuestro apoyo inquebrantable a la última campaña de redes sociales de la Universidad. Esta iniciativa representa una oportunidad crucial para que nuestra comunidad se una, interactúe y genere un cambio significativo. ¿Tienes ideas o comentarios sobre los objetivos de nuestra campaña? ¡Nos encantaría saber de ti!",
         "campaignGoals": "Objetivos de la Campaña",
         "goal1Title": "Fomentar la Participación",
-        "goal1Content": "Nuestro principal objetivo es fomentar una comunidad en línea vibrante donde cada voz sea escuchada y valorada...",
+        "goal1Content": "Nuestro objetivo principal es fomentar una comunidad en línea vibrante donde cada voz sea escuchada y valorada. A través de la participación activa y la colaboración, podemos amplificar nuestro impacto colectivo y lograr un cambio positivo.",
         "goal2Title": "Promover la Diversidad e Inclusión",
-        "goal2Content": "La diversidad es nuestra fortaleza y la inclusión es nuestra base...",
+        "goal2Content": "La diversidad es nuestra fortaleza, y la inclusión es nuestra base. Nos esforzamos por crear un espacio en línea inclusivo que celebre diversas perspectivas, culturas y experiencias.",
         "goal3Title": "Impulsar la Innovación",
-        "goal3Content": "La innovación impulsa el progreso y las redes sociales son una herramienta poderosa para fomentar la creatividad..."
+        "goal3Content": "La innovación impulsa el progreso, y las redes sociales son una herramienta poderosa para estimular la creatividad y la innovación. Fomentamos el pensamiento innovador y las ideas audaces que expanden los límites de lo posible."
     },
     "nav": [
         {
-            "name": "ACADEMIA",
+            "name": "ACADÉMICOS",
             "url": "https://und.edu/academics/index.html"
         },
         {
@@ -29,7 +29,7 @@
             "url": "https://und.edu/programs/index.html"
         },
         {
-            "name": "SOBRE NOSOTROS",
+            "name": "ACERCA DE",
             "url": "https://und.edu/about/index.html"
         }
     ]

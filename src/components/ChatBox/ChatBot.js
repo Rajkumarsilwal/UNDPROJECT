@@ -41,6 +41,7 @@ const Chatbot = () => {
                 } else {
                     console.log('Python backend is connected...');
                     const data = await chatgptResponse.json();
+                    console.log('data value::', data.response);
                     botResponse = data?.response;
                 }
             } catch (error) {

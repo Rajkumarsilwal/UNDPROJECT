@@ -1,12 +1,12 @@
 import React from 'react';
 import { Container, Typography } from '@mui/material';
-import '../App.css'; 
+import '../App.css';
 
 export const PresidentEndorsement = () => {
   return (
     <Container maxWidth='lg' sx={{ marginTop: 4 }}>
       <div className='president-endorsement'>
-      
+
         {/* Title Section */}
         <Typography variant='h4' component='h1' gutterBottom>
           President's Endorsement
@@ -62,3 +62,69 @@ export const PresidentEndorsement = () => {
     </Container>
   );
 };
+
+
+// import React, { useState, useEffect } from 'react';
+// import { Container, Typography } from '@mui/material';
+
+
+// export const PresidentEndorsement = ({ language }) => {
+//   const [texts, setTexts] = useState(null);
+
+//   useEffect(() => {
+//     async function loadTexts() {
+//       try {
+//         // Dynamically import JSON based on language prop
+//         const langTexts = await import(`./LanguageConvertor/Languages/${language}.json`);
+//         setTexts(langTexts.default.president);
+//       } catch (err) {
+//         console.error("Error loading language file:", err);
+//       }
+//     }
+//     loadTexts();
+//   }, [language]);
+
+//   if (!texts) return <div>Loading...</div>;
+
+//   return (
+//     <Container maxWidth="lg" sx={{ marginTop: 4 }}>
+//       <div className="president-endorsement">
+//         <Typography variant="h4" component="h1" gutterBottom>
+//           {texts.presidentsEndorsement}
+//         </Typography>
+
+//         <Typography variant="h6" component="h2" gutterBottom>
+//           {texts.messageFromPresident}
+//         </Typography>
+//         <Typography variant="body1" color="text.secondary" gutterBottom>
+//           {texts.messageContent}
+//         </Typography>
+
+//         <Typography variant="h6" component="h2" gutterBottom>
+//           {texts.campaignGoals}
+//         </Typography>
+
+//         <Typography variant="h6" component="h3" gutterBottom>
+//           {texts.goal1Title}
+//         </Typography>
+//         <Typography variant="body1" color="text.secondary" gutterBottom>
+//           {texts.goal1Content}
+//         </Typography>
+
+//         <Typography variant="h6" component="h3" gutterBottom>
+//           {texts.goal2Title}
+//         </Typography>
+//         <Typography variant="body1" color="text.secondary" gutterBottom>
+//           {texts.goal2Content}
+//         </Typography>
+
+//         <Typography variant="h6" component="h3" gutterBottom>
+//           {texts.goal3Title}
+//         </Typography>
+//         <Typography variant="body1" color="text.secondary" gutterBottom>
+//           {texts.goal3Content}
+//         </Typography>
+//       </div>
+//     </Container>
+//   );
+// };
