@@ -1,0 +1,36 @@
+{
+    "president": {
+        "presidentsEndorsement": "Respaldo del Presidente",
+        "messageFromPresident": "Mensaje del Presidente",
+        "messageContent": "Nos complace anunciar nuestro firme apoyo a la última campaña en redes sociales de la Universidad. Esta iniciativa representa una oportunidad crucial para que nuestra comunidad se una, interactúe y genere un cambio significativo. ¿Tienes comentarios o sugerencias sobre nuestros objetivos de campaña? ¡Nos encantaría escucharlos!",
+        "campaignGoals": "Objetivos de la Campaña",
+        "goal1Title": "Empoderar la Participación",
+        "goal1Content": "Nuestro objetivo principal es fomentar una comunidad en línea vibrante donde cada voz sea escuchada y valorada. A través de la participación activa y la colaboración, podemos amplificar nuestro impacto colectivo y generar un cambio positivo.",
+        "goal2Title": "Promover la Diversidad y la Inclusión",
+        "goal2Content": "La diversidad es nuestra fortaleza, y la inclusión es nuestra base. Nos esforzamos por crear un espacio en línea inclusivo que celebre diversas perspectivas, culturas y experiencias.",
+        "goal3Title": "Impulsar la Innovación",
+        "goal3Content": "La innovación impulsa el progreso, y las redes sociales son una herramienta poderosa para fomentar la creatividad e innovación. Fomentamos el pensamiento innovador y las ideas audaces que desafían los límites de lo posible."
+    },
+    "nav": [
+        {
+            "name": "ACADEMIA",
+            "url": "https://und.edu/academics/index.html"
+        },
+        {
+            "name": "ADMISIONES",
+            "url": "https://und.edu/admissions/index.html"
+        },
+        {
+            "name": "INVESTIGACIÓN",
+            "url": "https://und.edu/research/index.html"
+        },
+        {
+            "name": "PROGRAMAS",
+            "url": "https://und.edu/programs/index.html"
+        },
+        {
+            "name": "ACERCA DE",
+            "url": "https://und.edu/about/index.html"
+        }
+    ]
+}

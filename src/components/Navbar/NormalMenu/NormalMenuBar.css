@@ -1,0 +1,45 @@
+.menuContainer {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    white-space: nowrap;
+    flex-wrap: wrap;
+    overflow-x: visible;
+    gap: 10px;
+    /* Default gap for small screens */
+}
+
+.menuLink {
+    color: #000000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    text-decoration: none;
+    white-space: nowrap;
+    transition: transform 0.2s ease-in-out, color 0.2s ease;
+}
+
+.menuLink:hover,
+.menuLink:focus {
+    transform: scale(1.2);
+    color: #009A44;
+}
+
+@media (min-width: 600px) {
+    .menuLink {
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 900px) {
+    .menuLink {
+        font-size: 1.2rem;
+    }
+}
+
+@media (min-width: 1200px) {
+    .menuContainer {
+        gap: 148px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+}

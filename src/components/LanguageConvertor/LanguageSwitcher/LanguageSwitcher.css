@@ -1,0 +1,72 @@
+.language-switcher-container {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+}
+
+.language-switcher-button {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid #009A44;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+    user-select: none;
+}
+
+.language-switcher-button.desktop {
+    width: 140px;
+    height: 40px;
+    font-size: 16px;
+}
+
+.language-switcher-button.mobile {
+    width: 80px;
+    height: 36px;
+    font-size: 14px;
+}
+
+.language-switcher-arrow {
+    font-size: 18px;
+    color: #009A44;
+}
+
+.language-switcher-dropdown {
+    position: absolute;
+    background-color: #000;
+    border: 1px solid #009A44;
+    border-radius: 10px;
+    z-index: 9999;
+    user-select: none;
+}
+
+.language-switcher-dropdown.desktop {
+    top: 42px;
+    width: 140px;
+}
+
+.language-switcher-dropdown.mobile {
+    top: 38px;
+    width: 80px;
+}
+
+.language-switcher-item {
+    padding: 8px 10px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    user-select: none;
+    font-size: inherit;
+    /* inherit from button font-size */
+}
+
+.language-switcher-item:hover,
+.language-switcher-item:focus {
+    background-color: #009A44;
+    outline: none;
+}

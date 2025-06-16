@@ -1,0 +1,30 @@
+import React from 'react';
+import './NormalMenuBar.css';
+
+const navigationLinks = [
+    { name: 'ACADEMICS', url: 'https://und.edu/academics/index.html' },
+    { name: 'ADMISSIONS', url: 'https://und.edu/admissions/index.html' },
+    { name: 'RESEARCH', url: 'https://und.edu/research/index.html' },
+    { name: 'PROGRAMS', url: 'https://und.edu/programs/index.html' },
+    { name: 'ABOUT', url: 'https://und.edu/about/index.html' },
+];
+
+const NormalMenuBar = ({ direction = 'row' }) => (
+    <nav>
+        <div className="menuContainer" style={{ flexDirection: direction }}>
+            {navigationLinks.map((link) => (
+                <a
+                    key={link.name}
+                    href={link.url}
+                    className="menuLink"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    {link.name}
+                </a>
+            ))}
+        </div>
+    </nav>
+);
+
+export default NormalMenuBar;
