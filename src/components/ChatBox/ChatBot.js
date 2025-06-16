@@ -39,6 +39,7 @@ const Chatbot = () => {
                     console.error('HTTP error:', chatgptResponse.status);
                     botResponse = 'Sorry, something went wrong with the AI.';
                 } else {
+                    console.log('Python backend is connected...');
                     const data = await chatgptResponse.json();
                     botResponse = data?.response;
                 }
