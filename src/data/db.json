@@ -112,6 +112,17 @@
         },
         {
             "id": 11,
+            "author": "Sammy Silwal",
+            "username": "Sammy",
+            "message": "AI and ML is exciting and its future!",
+            "date": "2025-04-05T08:20:00Z",
+            "location": "Michigan, USA",
+            "image": "https://randomuser.me/api/portraits/women/15.jpg",
+            "likes": 60,
+            "reposts": 40
+        },
+        {
+            "id": 12,
             "author": "ABC Test",
             "username": "ABC",
             "message": "React is fun!",
