@@ -15,8 +15,9 @@ import { Footer } from './components/Footer';
 import PostList from './components/PostList';
 import NavigationLinks from './components/Navbar/NormalMenu/NormalMenuBar';
 import MobileMenu from './components/Navbar/MobileMenu/MobileMenu';
-import Chatbot from './components/ChatBox/ChatBot';
+// import Chatbot from './components/ChatBox/ChatBot';
 import LanguageSwitcher from './components/LanguageConvertor/LanguageSwitcher/LanguageSwitcher';
+import ChatAccessibilityButton from './components/ChatAccessibility/ChatAccessibilityBar';
 
 
 
@@ -129,7 +130,7 @@ function App() {
         <PostList />
       </Container>
 
-      <Chatbot />
+      <ChatAccessibilityButton />
       <Footer />
     </Box>
   );
