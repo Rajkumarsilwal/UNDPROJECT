@@ -1,13 +1,18 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import './LanguageSwitcher.css';
+import { LanguageContext } from '../LanguageContext';
+import en from '../Languages/en.json';
+import es from '../Languages/es.json';
 
 const languages = [
     { value: 'en', label: 'English', shortLabel: 'EN', flag: '🇺🇸' },
     { value: 'es', label: 'Español', shortLabel: 'ES', flag: '🇪🇸' },
 ];
 
+const translations = { en, es };
+
 export default function LanguageSwitcher() {
-    const [currentLang, setCurrentLang] = useState('en');
+    const { currentLang, setLanguage } = useContext(LanguageContext);
     const [isOpen, setIsOpen] = useState(false);
     const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
 
@@ -20,7 +25,7 @@ export default function LanguageSwitcher() {
     }, []);
 
     const handleSelect = (value) => {
-        setCurrentLang(value);
+        setLanguage(value);
         setIsOpen(false);
     };
 
@@ -63,6 +68,7 @@ export default function LanguageSwitcher() {
                 </div>
             )}
         </div>
+
     );
 }
 

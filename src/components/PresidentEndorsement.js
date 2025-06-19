@@ -1,130 +1,87 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Container, Typography } from '@mui/material';
 import '../App.css';
+import { LanguageContext } from './LanguageConvertor/LanguageContext';
+import defaultLanguage from './LanguageConvertor/Languages/es.json'
 
-export const PresidentEndorsement = () => {
+
+const PresidentEndorsement = () => {
+  const { language } = useContext(LanguageContext);
+
+  // Incase the language doesnt get loaded from LanguageContext
+  const lang = language || defaultLanguage;
+
+  if (!lang || !lang?.president) return null;
+
   return (
     <Container maxWidth='lg' sx={{ marginTop: 4 }}>
       <div className='president-endorsement'>
 
         {/* Title Section */}
         <Typography variant='h4' component='h1' gutterBottom>
-          President's Endorsement
+          {lang.president.presidentsEndorsement}
+          {/* President's Endorsement */}
         </Typography>
 
         {/* Message from the President */}
         <Typography variant='h6' component='h2' gutterBottom>
-          Message from the President
+          {lang.president.messageFromPresident}
         </Typography>
         <Typography variant='body1' color='text.secondary' gutterBottom>
-          We are thrilled to announce our unwavering support for the University's
+          {lang.president.messageContent}
+          {/* We are thrilled to announce our unwavering support for the University's
           latest social media campaign. This initiative signifies a crucial
           opportunity for our community to unite, interact, and effect significant
           change. Have thoughts or feedback on our campaign goals? We'd love to
-          hear from you!
+          hear from you! */}
         </Typography>
 
         {/* Section: Campaign Goals */}
         <Typography variant='h6' component='h2' gutterBottom>
-          Campaign Goals
+          {lang.president.campaignGoals}
+          {/* Campaign Goals */}
         </Typography>
 
         {/* Goal 1 */}
         <Typography variant='h6' component='h3' gutterBottom>
-          Empowering Engagement
+          {lang.president.goal1Title}
+          {/* Empowering Engagement */}
         </Typography>
         <Typography variant='body1' color='text.secondary' gutterBottom>
-          Our primary aim is to foster a vibrant online community where every voice
+          {lang.president.goal1Content}
+          {/* Our primary aim is to foster a vibrant online community where every voice
           is heard and valued. Through active participation and collaboration, we
-          can amplify our collective impact and bring about positive change.
+          can amplify our collective impact and bring about positive change. */}
         </Typography>
 
         {/* Goal 2 */}
         <Typography variant='h6' component='h3' gutterBottom>
-          Promoting Diversity and Inclusion
+          {lang.president.goal2Title}
+          {/* Promoting Diversity and Inclusion */}
         </Typography>
         <Typography variant='body1' color='text.secondary' gutterBottom>
-          Diversity is our strength, and inclusivity is our foundation. We strive
+          {lang.president.goal2Content}
+          {/* Diversity is our strength, and inclusivity is our foundation. We strive
           to create an inclusive online space that celebrates diverse perspectives,
-          cultures, and experiences.
+          cultures, and experiences. */}
         </Typography>
 
         {/* Goal 3 */}
         <Typography variant='h6' component='h3' gutterBottom>
-          Driving Innovation
+          {lang.president.goal3Title}
+          {/* Driving Innovation */}
         </Typography>
         <Typography variant='body1' color='text.secondary' gutterBottom>
-          Innovation drives progress, and social media is a powerful tool for
+          {lang.president.goal3Content}
+          {/* Innovation drives progress, and social media is a powerful tool for
           sparking creativity and innovation. We encourage innovative thinking and
-          bold ideas that push the boundaries of what's possible.
+          bold ideas that push the boundaries of what's possible. */}
         </Typography>
       </div>
     </Container>
   );
 };
 
-
-// import React, { useState, useEffect } from 'react';
-// import { Container, Typography } from '@mui/material';
+export default PresidentEndorsement;
 
 
-// export const PresidentEndorsement = ({ language }) => {
-//   const [texts, setTexts] = useState(null);
-
-//   useEffect(() => {
-//     async function loadTexts() {
-//       try {
-//         // Dynamically import JSON based on language prop
-//         const langTexts = await import(`./LanguageConvertor/Languages/${language}.json`);
-//         setTexts(langTexts.default.president);
-//       } catch (err) {
-//         console.error("Error loading language file:", err);
-//       }
-//     }
-//     loadTexts();
-//   }, [language]);
-
-//   if (!texts) return <div>Loading...</div>;
-
-//   return (
-//     <Container maxWidth="lg" sx={{ marginTop: 4 }}>
-//       <div className="president-endorsement">
-//         <Typography variant="h4" component="h1" gutterBottom>
-//           {texts.presidentsEndorsement}
-//         </Typography>
-
-//         <Typography variant="h6" component="h2" gutterBottom>
-//           {texts.messageFromPresident}
-//         </Typography>
-//         <Typography variant="body1" color="text.secondary" gutterBottom>
-//           {texts.messageContent}
-//         </Typography>
-
-//         <Typography variant="h6" component="h2" gutterBottom>
-//           {texts.campaignGoals}
-//         </Typography>
-
-//         <Typography variant="h6" component="h3" gutterBottom>
-//           {texts.goal1Title}
-//         </Typography>
-//         <Typography variant="body1" color="text.secondary" gutterBottom>
-//           {texts.goal1Content}
-//         </Typography>
-
-//         <Typography variant="h6" component="h3" gutterBottom>
-//           {texts.goal2Title}
-//         </Typography>
-//         <Typography variant="body1" color="text.secondary" gutterBottom>
-//           {texts.goal2Content}
-//         </Typography>
-
-//         <Typography variant="h6" component="h3" gutterBottom>
-//           {texts.goal3Title}
-//         </Typography>
-//         <Typography variant="body1" color="text.secondary" gutterBottom>
-//           {texts.goal3Content}
-//         </Typography>
-//       </div>
-//     </Container>
-//   );
-// };

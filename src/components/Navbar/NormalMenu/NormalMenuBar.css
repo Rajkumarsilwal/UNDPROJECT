@@ -5,8 +5,8 @@
     white-space: nowrap;
     flex-wrap: wrap;
     overflow-x: visible;
-    gap: 10px;
-    /* Default gap for small screens */
+    gap: 16px;
+
 }
 
 .menuLink {
@@ -16,6 +16,10 @@
     text-decoration: none;
     white-space: nowrap;
     transition: transform 0.2s ease-in-out, color 0.2s ease;
+    min-width: 100px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .menuLink:hover,
@@ -37,8 +41,14 @@
 }
 
 @media (min-width: 1200px) {
-    .menuContainer {
-        gap: 148px;
+    .menuContainer[data-lang='en'] {
+        gap: 140px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+
+    .menuContainer[data-lang='es'] {
+        gap: 120px;
         flex-wrap: nowrap;
         overflow-x: auto;
     }

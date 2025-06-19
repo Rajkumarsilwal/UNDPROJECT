@@ -1,4 +1,7 @@
 {
+    "tagLine": {
+        "TagLineTitle": "Liderando Con Propósito"
+    },
     "president": {
         "presidentsEndorsement": "Respaldo del Presidente",
         "messageFromPresident": "Mensaje del Presidente",
@@ -32,5 +35,9 @@
             "name": "ACERCA DE",
             "url": "https://und.edu/about/index.html"
         }
-    ]
+    ],
+    "aboutPresident": {
+        "title1": "Acerca del Presidente",
+        "title1Content": "El Dr. Andrew Armacost fue elegido por la Junta Estatal de Educación Superior para servir como el 13º presidente de la Universidad de Dakota del Norte (UND). Armacost comenzó su mandato como presidente de UND el 1 de junio de 2020. Armacost se desempeñó como Decano de la Facultad en la Academia de la Fuerza Aérea de los Estados Unidos. Con más de 30 años de servicio activo y 20 años en la Academia, Armacost sirvió con el rango de General de Brigada como el jefe académico de esta institución de renombre nacional."
+    }
 }

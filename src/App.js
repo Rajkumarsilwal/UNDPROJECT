@@ -4,13 +4,12 @@ import {
   Toolbar,
   Container,
   Box,
-  Typography,
   useMediaQuery,
 } from '@mui/material';
 import './App.css';
 import logo from './logo.svg';
-import { PresidentEndorsement } from './components/PresidentEndorsement';
-import { AboutPresident } from './components/AboutPresident';
+import PresidentEndorsement from './components/PresidentEndorsement';
+import AboutPresident from './components/AboutPresident';
 import { Footer } from './components/Footer';
 import PostList from './components/PostList';
 import NavigationLinks from './components/Navbar/NormalMenu/NormalMenuBar';
@@ -18,6 +17,7 @@ import MobileMenu from './components/Navbar/MobileMenu/MobileMenu';
 // import Chatbot from './components/ChatBox/ChatBot';
 import LanguageSwitcher from './components/LanguageConvertor/LanguageSwitcher/LanguageSwitcher';
 import ChatAccessibilityButton from './components/ChatAccessibility/ChatAccessibilityBar';
+import TaglineSection from './components/Tagline';
 
 
 
@@ -89,18 +89,9 @@ function App() {
 
       {/* Tagline Section */}
       <Box sx={{ textAlign: 'center', mt: isDesktop ? '160px' : '90px', mb: 4 }}>
-        <Typography
-          variant="h5"
-          sx={{
-            fontWeight: 'bold',
-            color: 'black',
-            fontFamily: 'arial',
-            fontSize: { xs: '2.8rem', sm: '3rem', md: '3.5rem' },
-          }}
-        >
-          "Leading With Purpose"
-        </Typography>
+        <TaglineSection />
       </Box>
+
 
 
       {/* Main Content */}
