@@ -1,8 +1,15 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Box, Container, Typography, Link } from '@mui/material';
 import '../App.css';
+import defaultLanguage from './LanguageConvertor/Languages/en.json'
+import { LanguageContext } from './LanguageConvertor/LanguageContext';
 
 export const Footer = () => {
+
+  const { language } = useContext(LanguageContext);
+  const lang = language || defaultLanguage;
+  console.log('lang::', lang);
+
   return (
     <Box
       component='footer'
@@ -32,7 +39,7 @@ export const Footer = () => {
                 fontWeight: 'bold',
               }}
             >
-              Share your thoughts and feedback:{" "}
+              {lang.footerContians.title}{" "}
               <Link
                 href='https://und.edu/social-media'
                 color='inherit'
