@@ -63,10 +63,14 @@ const PostList = () => {
   const formatToUserTimeZone = (date) => {
     return moment.utc(date).local().format('YYYY-MM-DD hh:mm A z');
   };
-
-  const indexOfLastPost = page * postsPerPage;
+  const totalPages = Math.ceil(filteredPosts.length / postsPerPage) || 1;
+  const validPage = Math.min(page, totalPages);
+  const indexOfLastPost = validPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
+  // const indexOfLastPost = page * postsPerPage;
+  // const indexOfFirstPost = indexOfLastPost - postsPerPage;
+  // const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
 
   // For language conversion 
   const { language } = useContext(LanguageContext);
