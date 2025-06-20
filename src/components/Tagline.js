@@ -13,10 +13,11 @@ const TaglineSection = () => {
         <Typography
             variant="h5"
             sx={{
+                marginTop: '12px',
                 fontWeight: 'bold',
                 color: 'black',
-                fontFamily: 'arial',
-                fontSize: { xs: '2.8rem', sm: '3rem', md: '3.5rem' },
+                fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+                fontSize: { xs: '1.92rem', sm: '2.7rem', md: '3.5rem' },
             }}
         >
             &quot; {tagline} &quot;

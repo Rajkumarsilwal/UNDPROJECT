@@ -14,7 +14,7 @@ const PresidentEndorsement = () => {
   if (!lang || !lang?.president) return null;
 
   return (
-    <Container maxWidth='lg' sx={{ marginTop: 4 }}>
+    <Container maxWidth='lg' sx={{ marginTop: 1 }}>
       <div className='president-endorsement'>
 
         {/* Title Section */}

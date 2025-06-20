@@ -8,7 +8,6 @@ export const Footer = () => {
 
   const { language } = useContext(LanguageContext);
   const lang = language || defaultLanguage;
-  console.log('lang::', lang);
 
   return (
     <Box
@@ -35,7 +34,8 @@ export const Footer = () => {
               variant='body1'
               align='center'
               sx={{
-                fontSize: '1.2rem',
+                // fontSize: '1.2rem',
+                fontSize: 'clamp(8px, 4.3vw, 19.2px)',
                 fontWeight: 'bold',
               }}
             >
@@ -46,7 +46,7 @@ export const Footer = () => {
                 underline='hover'
                 sx={{
                   fontWeight: 'bold',
-                  fontSize: '1.2rem',
+                  fontSize: 'clamp(8px, 4.3vw, 19.2px)',
                   '&:hover': {
                     color: '#009A44 ',
                   },

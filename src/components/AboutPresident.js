@@ -38,7 +38,13 @@ const AboutPresident = () => {
       />
 
       {/* Text Section */}
-      <Typography variant='h4' gutterBottom>
+      <Typography variant='h4'
+        gutterBottom
+        sx={{
+          fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+          fontSize: 'clamp(20px, 5vw, 35px)'
+        }}
+      >
         {/* About The President */}
         {lang.aboutPresident.title1}
       </Typography>
@@ -49,6 +55,8 @@ const AboutPresident = () => {
         sx={{
           textAlign: 'justify',
           marginBottom: 0,
+          fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
+          fontSize: 'clamp(10px, 4vw, 18px)'
         }}
       >
         {lang?.aboutPresident?.title1Content}
