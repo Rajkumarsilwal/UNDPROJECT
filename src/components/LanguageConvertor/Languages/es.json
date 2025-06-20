@@ -42,5 +42,11 @@
     },
     "footerContians": {
         "title": "Comparte tus ideas y comentarios:"
+    },
+    "postList": {
+        "Title": "Publicaciones Recientes",
+        "Loading": "Cargando publicaciones...",
+        "NoData": "No hay datos disponibles para el rango de fechas proporcionado.",
+        "FilterData": "No se encontraron publicaciones coincidentes."
     }
 }

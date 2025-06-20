@@ -42,5 +42,11 @@
     },
     "footerContians": {
         "title": "Share your thoughts and feedback:"
+    },
+    "postList": {
+        "Title": "Recent Posts",
+        "Loading": "Loading posts...",
+        "NoData": "No data available for the given date range.",
+        "FilterData": "No matching posts found."
     }
 }

@@ -1,9 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Box, Typography, Card, CardContent, Avatar } from '@mui/material';
 import FilterPostSearch from './FilterPostSearch';
 import PaginationComponent from './PaginationComponent';
 import { fetchPosts9Days } from './fetchPosts9Days';
 import moment from 'moment-timezone';
+import defaultLanguage from './LanguageConvertor/Languages/en.json'
+import { LanguageContext } from './LanguageConvertor/LanguageContext';
+
 
 const PostList = () => {
   const [posts, setPosts] = useState([]);
@@ -58,27 +61,31 @@ const PostList = () => {
 
   // Function for time formatting 
   const formatToUserTimeZone = (date) => {
-    return moment.utc(date).local().format('YYYY-MM-DD hh:mm A z'); 
+    return moment.utc(date).local().format('YYYY-MM-DD hh:mm A z');
   };
 
   const indexOfLastPost = page * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
 
+  // For language conversion 
+  const { language } = useContext(LanguageContext);
+  const lang = language ?? defaultLanguage;
+
   return (
     <Box sx={{ mt: 4 }}>
       <Typography variant='h4' gutterBottom>
-        Recent Posts
+        {lang?.postList?.Title ?? "Recent Posts"}
       </Typography>
 
       <FilterPostSearch searchTerm={searchTerm} onSearch={setSearchTerm} />
 
       {isLoading ? (
-        <Typography>Loading posts...</Typography>
+        <Typography>{lang?.postList?.Loading ?? "Loading posts..."}</Typography>
       ) : posts.length === 0 ? (
-        <Typography>No data available for the given date range.</Typography>
+        <Typography>{lang?.postList?.NoData ?? "No data available for the given date range."}</Typography>
       ) : filteredPosts.length === 0 ? (
-        <Typography>No matching posts found.</Typography>
+        <Typography>{lang?.postList?.FilterData ?? "No matching posts found."}</Typography>
       ) : (
         <>
           {currentPosts.map((post) => (

@@ -10,7 +10,7 @@ const AboutPresident = () => {
   const { language } = useContext(LanguageContext);
 
   // Incase the language doesnt get loaded from LanguageContext
-  const lang = language || defaultLanguage;
+  const lang = language ?? defaultLanguage;
 
   return (
     <Box
@@ -51,8 +51,8 @@ const AboutPresident = () => {
           marginBottom: 0,
         }}
       >
-        {lang.aboutPresident.title1Content}
-        {/* Dr. Andrew Armacost was chosen by the State Board of Higher Education to serve as the University of North Dakota’s UND 13th president. Armacost began his tenure as UND President on June 1, 2020. Armacost served as the Dean of the Faculty at the U.S. Air Force Academy. With more than 30 years on active duty and 20 years at the Academy, Armacost served in the rank of Brigadier General as the chief academic officer for this nationally renowned institution. */}
+        {lang?.aboutPresident?.title1Content}
+        {/* "Dr. Andrew Armacost was chosen by the State Board of Higher Education to serve as the University of North Dakota’s UND 13th president. Armacost began his tenure as UND President on June 1, 2020. Armacost served as the Dean of the Faculty at the U.S. Air Force Academy. With more than 30 years on active duty and 20 years at the Academy, Armacost served in the rank of Brigadier General as the chief academic officer for this nationally renowned institution." */}
       </Typography>
     </Box>
   );
