@@ -59,20 +59,15 @@ function App() {
                 src={logo}
                 alt="Logo"
                 sx={{
-                  height: { xs: 26, sm: 45, md: 60 }, // scale with screen size
-                  width: 'auto',
-                  // maxWidth: '100%',
+                  height: { xs: 32, sm: 45, md: 60 },
                   maxWidth: { xs: '80%', sm: '100%' },
+                  width: 'auto',
                 }}
               />
-
-
             </Box>
-            {/* <LanguageSwitcher /> */}
-            <Box sx={{ flexShrink: 0, minWidth: 0 }}>
-              <LanguageSwitcher />
-            </Box>
+            <LanguageSwitcher />
           </Toolbar>
+
         </Container>
 
         {isDesktop && (

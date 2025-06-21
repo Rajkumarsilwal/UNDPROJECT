@@ -7,8 +7,6 @@ const languages = [
     { value: 'es', label: 'Español', shortLabel: 'ES', flag: '🇪🇸' },
 ];
 
-
-
 export default function LanguageSwitcher() {
     const { currentLang, setLanguage } = useContext(LanguageContext);
     const [isOpen, setIsOpen] = useState(false);
@@ -41,7 +39,8 @@ export default function LanguageSwitcher() {
                 <span>
                     {currentLabel.flag} {isMobile ? currentLabel.shortLabel : currentLabel.label}
                 </span>
-                <span className="language-switcher-arrow">
+                {/* <span className="language-switcher-arrow"> */}
+                <span className={`language-switcher-arrow ${isMobile ? 'mobile' : 'desktop'}`}>
                     {isOpen ? '✕' : '▾'}
                 </span>
             </button>
