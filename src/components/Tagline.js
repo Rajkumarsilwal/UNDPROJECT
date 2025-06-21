@@ -17,10 +17,10 @@ const TaglineSection = () => {
                 fontWeight: 'bold',
                 color: 'black',
                 fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-                fontSize: { xs: '1.92rem', sm: '2.7rem', md: '3.5rem' },
+                fontSize: { xs: '1.90rem', sm: '2.7rem', md: '3.5rem' },
             }}
         >
-            &quot; {tagline} &quot;
+            &quot;{tagline}&quot;
         </Typography>
     );
 };
