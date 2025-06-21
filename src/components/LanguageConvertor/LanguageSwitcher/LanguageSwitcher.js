@@ -28,7 +28,6 @@ export default function LanguageSwitcher() {
     };
 
     const currentLabel = languages.find((lang) => lang.value === currentLang);
-    console.log('currentLabel value::', currentLabel);
 
     return (
         <div className="language-switcher-container">
