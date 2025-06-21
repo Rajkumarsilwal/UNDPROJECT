@@ -38,7 +38,7 @@ body {
 /* Specific styles for PresidentEndorsement */
 /* h1 for main heading i.e: President's Endorsement */
 .president-endorsement h1 {
-  font-size: clamp(25px, 4.1vw, 42px);
+  font-size: clamp(24px, 4.1vw, 42px);
   /* font-size: 43px; */
   font-weight: bold;
   text-align: left;
