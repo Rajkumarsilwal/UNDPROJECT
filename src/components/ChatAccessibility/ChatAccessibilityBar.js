@@ -7,9 +7,11 @@ import TextIncreaseIcon from '@mui/icons-material/TextIncrease';
 import TextDecreaseIcon from '@mui/icons-material/TextDecrease';
 import ContrastIcon from '@mui/icons-material/Contrast';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
+import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Chatbot from '../ChatBox/ChatBot';
+
 
 
 const ChatAccessibilityButton = () => {
@@ -32,6 +34,7 @@ const ChatAccessibilityButton = () => {
         { icon: <TextDecreaseIcon />, name: 'Decrease Font', onClick: ('Decrease Font Size') },
         { icon: <ContrastIcon />, name: 'High Contrast', onClick: () => alert('High Contrast clicked') },
         { icon: <VolumeUpIcon />, name: 'Read Aloud', onClick: () => alert('Read Aloud clicked') },
+        { icon: <RestartAltIcon />, name: 'Make Default', onClick: () => window.location.reload() },
     ];
 
     return (
