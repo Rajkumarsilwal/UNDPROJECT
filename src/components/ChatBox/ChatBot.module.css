@@ -1,8 +1,6 @@
 .chatbotContainer {
     position: fixed;
     bottom: 65px;
-    /* This moves it 80px above bottom */
-    /* right: max(1rem, calc((100vw - 1200px) / 1.98 + 1.5rem)); */
     right: max(1rem, calc((100vw - 1200px) / 1.98 + 1.5rem));
     width: 60px;
     height: 60px;
