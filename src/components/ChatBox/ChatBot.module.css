@@ -14,29 +14,9 @@
     z-index: 1500;
 }
 
-
-/* .chatbotContainer.open {
+.chatbotContainer.open {
     width: 300px;
     height: 400px;
-} */
-
-.chatbotContainer.open {
-    width: min(90vw, 300px);
-    height: min(70vh, 400px);
-}
-
-@media (max-width: 480px) {
-    .chatbotContainer.open {
-        width: 90vw;
-        height: 70vh;
-        bottom: 20px;
-        right: 5vw;
-        border-radius: 10px;
-    }
-
-    .toggleButton {
-        font-size: 30px;
-    }
 }
 
 .chatWindow {
