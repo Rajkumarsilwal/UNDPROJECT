@@ -31,7 +31,6 @@ const Chatbot = ({ handleClose }) => {
                     headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({ message: input }),
                 });
-                console.log("chatResponse::", chatgptResponse);
 
                 if (!chatgptResponse.ok) {
                     botResponse = 'Sorry, something went wrong with the AI.';
