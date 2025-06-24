@@ -211,12 +211,12 @@
         },
         {
             "id": 20,
-            "author": "Harris William",
+            "author": "Prince Harry",
             "username": "willh",
-            "message": "Java or Python? What do you prefer?",
+            "message": "Java or Python or Rust? What do you like to use for your programming?",
             "date": "2024-03-07T14:30:00Z",
-            "location": "Denver, USA",
-            "image": "https://randomuser.me/api/portraits/men/8.jpg",
+            "location": "Utah, USA",
+            "image": "https://randomuser.me/api/portraits/men/25.jpg",
             "likes": 22,
             "reposts": 3
         },

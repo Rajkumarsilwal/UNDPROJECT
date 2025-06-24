@@ -22,6 +22,11 @@
   text-align: center;
 }
 
+html {
+  font-size: 100%;
+  /* 16px default */
+}
+
 /* PresidentEndorsement font for PresidentEndorsement  */
 body {
   font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
@@ -33,7 +38,7 @@ body {
 /* Specific styles for PresidentEndorsement */
 /* h1 for main heading i.e: President's Endorsement */
 .president-endorsement h1 {
-  font-size: clamp(24px, 4.1vw, 42px);
+  font-size: clamp(1.5rem, 4.1vw, 2.625rem);
   /* font-size: 43px; */
   font-weight: bold;
   text-align: left;
@@ -45,23 +50,26 @@ body {
 /* h2 for secondary heading i.e. message from the president
    and Campaign Goals */
 .president-endorsement h2 {
-  font-size: clamp(21px, 3.5vw, 33px);
+  /* font-size: clamp(21px, 3.5vw, 33px); */
   /* font-size: 33px; */
+  font-size: clamp(1.3125rem, 3.5vw, 2.0625rem);
   font-weight: bold;
   text-align: left;
 }
 
 /* h3 for heading under Campiagn Goals */
 .president-endorsement h3 {
-  font-size: clamp(18px, 3.4vw, 30px);
+  /* font-size: clamp(18px, 3.4vw, 30px); */
   /* font-size: 30px; */
+  font-size: clamp(1.125rem, 3.4vw, 1.875rem);
   font-weight: bold;
   text-align: left;
 }
 
 .president-endorsement p {
-  font-size: clamp(10px, 4vw, 18px);
+  /* font-size: clamp(10px, 4vw, 18px); */
   /* font-size: 18px; */
+  font-size: clamp(0.625rem, 4vw, 1.125rem);
   text-align: justify;
   margin-bottom: 20px;
 }
