@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Box, Container, Typography, Link } from '@mui/material';
 import '../App.css';
+import defaultLanguage from './LanguageConvertor/Languages/en.json'
+import { LanguageContext } from './LanguageConvertor/LanguageContext';
 
 export const Footer = () => {
+
+  const { language } = useContext(LanguageContext);
+  const lang = language || defaultLanguage;
+
   return (
     <Box
       component='footer'
@@ -28,18 +34,19 @@ export const Footer = () => {
               variant='body1'
               align='center'
               sx={{
-                fontSize: '1.2rem',
+                // fontSize: '1.2rem',
+                fontSize: 'clamp(8px, 4.3vw, 19.2px)',
                 fontWeight: 'bold',
               }}
             >
-              Share your thoughts and feedback:{" "}
+              {lang.footerContians.title}{" "}
               <Link
                 href='https://und.edu/social-media'
                 color='inherit'
                 underline='hover'
                 sx={{
                   fontWeight: 'bold',
-                  fontSize: '1.2rem',
+                  fontSize: 'clamp(8px, 4.3vw, 19.2px)',
                   '&:hover': {
                     color: '#009A44 ',
                   },
