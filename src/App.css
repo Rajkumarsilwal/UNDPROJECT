@@ -1,6 +1,7 @@
 /* General styling */
 .App {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  --main-font: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: var(--main-font);
   margin: 0;
   padding: 0;
 }
@@ -8,17 +9,11 @@
 /* Styling for the logo inside AppBar */
 .App-logo {
   height: 6vmin;
-  /* Flexible logo size, adjusts based on viewport size */
   background-color: #000;
-  /* Gray background for the logo */
   padding: 5px;
-  /* Optional: adds some space around the logo */
   pointer-events: none;
-  /* Makes the logo unclickable */
   max-height: 40px;
-  /* Limits the maximum size for larger screens */
   width: auto;
-  /* Ensures the aspect ratio of the logo is preserved */
 }
 
 /* Main content section */
