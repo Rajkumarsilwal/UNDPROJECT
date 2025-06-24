@@ -69,7 +69,7 @@ body {
 .president-endorsement p {
   /* font-size: clamp(10px, 4vw, 18px); */
   /* font-size: 18px; */
-  font-size: clamp(0.625rem, 4vw, 1.125rem);
+  font-size: clamp(1rem, 4vw, 1.125rem);
   text-align: justify;
-  margin-bottom: 20px;
+  margin-bottom: 1.45rem;
 }
