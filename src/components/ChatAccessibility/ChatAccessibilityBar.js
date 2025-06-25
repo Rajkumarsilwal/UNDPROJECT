@@ -11,6 +11,8 @@ import RestartAltIcon from '@mui/icons-material/RestartAlt';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Chatbot from '../ChatBox/ChatBot';
+import useAccessibilityActions from './AccessibilityBar';
+
 
 
 
@@ -23,16 +25,23 @@ const ChatAccessibilityButton = () => {
     const isSmallScreen = useMediaQuery('(max-width:1209px)');
 
     const iconFontSize = isSmallScreen ? 'small' : 'medium';
-    const buttonWidth = isSmallScreen ? 40 : 140;  // icon-only width vs full width
+    const buttonWidth = isSmallScreen ? 40 : 140;
     const buttonPadding = isSmallScreen ? '8px' : '12px';
     const actionButtonSize = isSmallScreen ? 'small' : 'medium';
     const buttonHeight = 40;
+
+    const { toggleHighContrast, isHighContrast } = useAccessibilityActions();
 
 
     const accessibilityActions = [
         { icon: <TextIncreaseIcon />, name: 'Increase Font', onClick: ('Increase Font Size') },
         { icon: <TextDecreaseIcon />, name: 'Decrease Font', onClick: ('Decrease Font Size') },
-        { icon: <ContrastIcon />, name: 'High Contrast', onClick: () => alert('High Contrast clicked') },
+        // { icon: <ContrastIcon />, name: 'High Contrast', onClick: () => alert('High Contrast clicked') },
+        {
+            icon: <ContrastIcon />,
+            name: isHighContrast ? 'Normal Contrast' : 'High Contrast',
+            onClick: toggleHighContrast
+        },
         { icon: <VolumeUpIcon />, name: 'Read Aloud', onClick: () => alert('Read Aloud clicked') },
         { icon: <RestartAltIcon />, name: 'Make Default', onClick: () => window.location.reload() },
     ];

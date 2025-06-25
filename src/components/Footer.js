@@ -4,7 +4,7 @@ import '../App.css';
 import defaultLanguage from './LanguageConvertor/Languages/en.json'
 import { LanguageContext } from './LanguageConvertor/LanguageContext';
 
-export const Footer = () => {
+const Footer = () => {
 
   const { language } = useContext(LanguageContext);
   const lang = language || defaultLanguage;
@@ -15,7 +15,7 @@ export const Footer = () => {
       sx={{
         backgroundColor: 'black',
         color: 'white',
-        py: 2, // Default padding
+        py: 2.5, // Default padding
       }}
     >
       <Container maxWidth='lg'>
@@ -34,9 +34,9 @@ export const Footer = () => {
               variant='body1'
               align='center'
               sx={{
-                // fontSize: '1.2rem',
                 fontSize: 'clamp(8px, 4.3vw, 19.2px)',
                 fontWeight: 'bold',
+                textAlign: 'left',
               }}
             >
               {lang.footerContians.title}{" "}
@@ -61,3 +61,5 @@ export const Footer = () => {
     </Box>
   );
 };
+
+export default Footer;
