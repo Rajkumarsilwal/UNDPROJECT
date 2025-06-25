@@ -4,7 +4,7 @@ import '../App.css';
 import defaultLanguage from './LanguageConvertor/Languages/en.json'
 import { LanguageContext } from './LanguageConvertor/LanguageContext';
 
-export const Footer = () => {
+const Footer = () => {
 
   const { language } = useContext(LanguageContext);
   const lang = language || defaultLanguage;
@@ -61,3 +61,5 @@ export const Footer = () => {
     </Box>
   );
 };
+
+export default Footer;
