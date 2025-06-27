@@ -31,6 +31,7 @@
 
 
 export const fetchPosts9Days = async ({ signal }) => {
+  console.warn('Test warning');
   const allPosts = [];
 
   try {
