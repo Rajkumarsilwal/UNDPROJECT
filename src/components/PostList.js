@@ -16,10 +16,30 @@ const PostList = () => {
   const [isLoading, setIsLoading] = useState(true);
   const postsPerPage = 4;
 
+
+
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     try {
+  //       const allPosts = await fetchPosts9Days();
+  //       setPosts(allPosts);
+  //       setFilteredPosts(allPosts);
+  //     } catch (error) {
+  //       console.error('Error fetching posts:', error);
+  //     } finally {
+  //       setIsLoading(false);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
+
   useEffect(() => {
+
+    const memoryLeakPrevent = new AbortController();
+
     const fetchData = async () => {
       try {
-        const allPosts = await fetchPosts9Days();
+        const allPosts = await fetchPosts9Days({ signal: memoryLeakPrevent.signal });
         setPosts(allPosts);
         setFilteredPosts(allPosts);
       } catch (error) {
@@ -29,7 +49,12 @@ const PostList = () => {
       }
     };
     fetchData();
+    return () => {
+      memoryLeakPrevent.abort();
+    }
   }, []);
+
+
 
   useEffect(() => {
     const filtered = posts.filter((post) => {
