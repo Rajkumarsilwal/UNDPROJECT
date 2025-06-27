@@ -8,12 +8,13 @@ import { LanguageContext } from './LanguageConvertor/LanguageContext';
 
 const AboutPresident = () => {
   const { language } = useContext(LanguageContext);
-
-  // Incase the language doesnt get loaded from LanguageContext
   const lang = language ?? defaultLanguage;
 
   return (
     <Box
+      id="about-president"
+      role="region"
+      aria-label="About the President"
       sx={{
         padding: 2,
         backgroundColor: '#f4f4f4',
@@ -42,7 +43,8 @@ const AboutPresident = () => {
         gutterBottom
         sx={{
           fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-          fontSize: 'clamp(20px, 5vw, 35px)'
+          fontWeight: 'bold',
+          fontSize: 'clamp(1.475rem, 3.4vw, 1.875rem)'
         }}
       >
         {/* About The President */}
@@ -56,7 +58,7 @@ const AboutPresident = () => {
           textAlign: 'justify',
           marginBottom: 0,
           fontFamily: '"Helvetica Neue", Helvetica, Arial, sans-serif',
-          fontSize: 'clamp(10px, 4vw, 18px)'
+          fontSize: '(1rem, 4vw, 1.125rem)'
         }}
       >
         {lang?.aboutPresident?.title1Content}
