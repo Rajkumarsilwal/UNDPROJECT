@@ -31,15 +31,10 @@
 
 
 export const fetchPosts9Days = async ({ signal }) => {
-  console.warn('Test warning');
   const allPosts = [];
 
   try {
-    // Fetch all posts from the mock API
     const response = await fetch('http://localhost:3001/posts', { signal });
-    console.log('response::', response);
-
-    // Check if the response is OK
     if (!response.ok) {
       throw new Error(`Error fetching data: ${response.statusText}`);
     }
