@@ -30,12 +30,13 @@
 // };
 
 
-export const fetchPosts9Days = async () => {
+export const fetchPosts9Days = async ({ signal }) => {
   const allPosts = [];
 
   try {
     // Fetch all posts from the mock API
-    const response = await fetch('http://localhost:3001/posts');
+    const response = await fetch('http://localhost:3001/posts', { signal });
+    console.log('response::', response);
 
     // Check if the response is OK
     if (!response.ok) {
@@ -44,12 +45,14 @@ export const fetchPosts9Days = async () => {
 
     const data = await response.json();
     allPosts.push(...data);
+    // Sort posts based on the latest date and time
+    allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
   } catch (error) {
-    console.error('Error fetching posts:', error);
+    if (error.name === 'AbortError') {
+      console.warn('Fetch aborted (component unmounted)');
+    } else {
+      console.error('Error fetching posts:', error);
+    }
   }
-
-  // Sort posts based on the latest date and time
-  allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
-
   return allPosts;
 };
