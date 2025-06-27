@@ -8,10 +8,13 @@ import TextDecreaseIcon from '@mui/icons-material/TextDecrease';
 import ContrastIcon from '@mui/icons-material/Contrast';
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
+import StopIcon from '@mui/icons-material/Stop';
 
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Chatbot from '../ChatBox/ChatBot';
 import useAccessibilityActions from './AccessibilityBar';
+
+import ReadContext from './AccessbilityButtons/ReadContext';
 
 
 
@@ -19,6 +22,8 @@ import useAccessibilityActions from './AccessibilityBar';
 const ChatAccessibilityButton = () => {
     const [showChat, setShowChat] = useState(false);
     const [showAccessibilityActions, setShowAccessibilityActions] = useState(false);
+
+    const { isReadingAloud, toggleReadAloud } = ReadContext()
 
 
     // Use isSmallScreen (700px) for icon-only toggle
@@ -36,14 +41,24 @@ const ChatAccessibilityButton = () => {
     const accessibilityActions = [
         { icon: <TextIncreaseIcon />, name: 'Increase Font', onClick: ('Increase Font Size') },
         { icon: <TextDecreaseIcon />, name: 'Decrease Font', onClick: ('Decrease Font Size') },
-        // { icon: <ContrastIcon />, name: 'High Contrast', onClick: () => alert('High Contrast clicked') },
         {
             icon: <ContrastIcon />,
             name: isHighContrast ? 'Normal Contrast' : 'High Contrast',
             onClick: toggleHighContrast
         },
-        { icon: <VolumeUpIcon />, name: 'Read Aloud', onClick: () => alert('Read Aloud clicked') },
-        { icon: <RestartAltIcon />, name: 'Make Default', onClick: () => window.location.reload() },
+        {
+            icon: isReadingAloud ? <StopIcon /> : <VolumeUpIcon />,
+            name: isReadingAloud ? 'Stop Reading' : 'Read Aloud',
+            onClick: toggleReadAloud,
+        },
+        {
+            icon: <RestartAltIcon />,
+            name: 'Make Default',
+            onClick: () => {
+                window.speechSynthesis.cancel();
+                window.location.reload();
+            }
+        },
     ];
 
     return (
