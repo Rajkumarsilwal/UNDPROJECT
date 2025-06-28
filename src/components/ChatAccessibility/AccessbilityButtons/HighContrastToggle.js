@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './Contrast.css';
 
 export default function HighContrastToggle() {
     const [isHighContrast, setIsHighContrast] = useState(false);

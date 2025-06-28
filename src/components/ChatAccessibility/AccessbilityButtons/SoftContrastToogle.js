@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import './Contrast.css';
 
 export default function SoftContrastToogle() {
     const [isSoftContrast, setSoftContrast] = useState(false);

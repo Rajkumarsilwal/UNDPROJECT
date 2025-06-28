@@ -1,32 +1,73 @@
+/* High Contrast Mode */
+body.high-contrast {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+body.high-contrast a {
+    color: yellow !important;
+    background-color: black !important;
+}
+
+body.high-contrast button {
+    background-color: yellow !important;
+    color: black !important;
+    border-color: yellow !important;
+}
+
+body.high-contrast .MuiTypography-root {
+    color: yellow !important;
+    background-color: black !important;
+}
+
+.high-contrast {
+    background-color: black !important;
+    color: yellow !important;
+}
+
+body.high-contrast input {
+    color: yellow !important;
+}
+
+/* body.high-contrast .MuiOutlinedInput-notchedOutline {
+  border-color: yellow !important;
+  background-color: black !important;
+}
+
+body.high-contrast .MuiOutlinedInput-notchedOutline legend {
+  color: yellow !important;
+} */
+
+
 body.kindle-mode {
-    background-color: #f5e6c8 !important;
-    /* Light sepia */
-    color: #4b3f2f !important;
-    /* Dark brown */
+    background-color: #eaeaea !important;
+    /* Soft light gray */
+    color: #333333 !important;
+    /* Soft dark gray */
 }
 
 body.kindle-mode a {
-    color: #7b4f1d !important;
+    color: #555555 !important;
     background-color: transparent !important;
 }
 
 body.kindle-mode button {
-    background-color: #d8c3a5 !important;
-    color: #4b3f2f !important;
-    border: 1px solid #4b3f2f !important;
+    background-color: #dcdcdc !important;
+    color: #333333 !important;
+    border: 1px solid #999999 !important;
 }
 
 body.kindle-mode .MuiTypography-root {
-    color: #4b3f2f !important;
-    background-color: #f5e6c8 !important;
+    color: #333333 !important;
+    background-color: #eaeaea !important;
 }
 
 body.kindle-mode input {
-    background-color: #f5e6c8 !important;
-    color: #4b3f2f !important;
-    border: 1px solid #7b4f1d !important;
+    background-color: #f3f3f3 !important;
+    color: #333333 !important;
+    border: 1px solid #cccccc !important;
 }
 
 body.kindle-mode .MuiPaper-root {
-    background-color: #f5e6c8 !important;
+    background-color: #f5f5f5 !important;
 }

@@ -31,6 +31,7 @@ export default function LanguageSwitcher() {
         <div className="language-switcher-container">
             <button
                 type="button"
+                aria-label={`Switch language. Current language is ${currentLabel.label}`}
                 onClick={() => setIsOpen(!isOpen)}
                 aria-haspopup="listbox"
                 aria-expanded={isOpen}
@@ -39,14 +40,19 @@ export default function LanguageSwitcher() {
                 <span>
                     {currentLabel.flag} {isMobile ? currentLabel.shortLabel : currentLabel.label}
                 </span>
-                {/* <span className="language-switcher-arrow"> */}
-                <span className={`language-switcher-arrow ${isMobile ? 'mobile' : 'desktop'}`}>
+
+                <span
+                    className={`language-switcher-arrow ${isMobile ? 'mobile' : 'desktop'}`}
+                    aria-hidden="true"
+                >
                     {isOpen ? '✕' : '▾'}
                 </span>
             </button>
 
             {isOpen && (
-                <div role="listbox" className={`language-switcher-dropdown ${isMobile ? 'mobile' : 'desktop'}`}>
+                <div
+                    role="listbox"
+                    className={`language-switcher-dropdown ${isMobile ? 'mobile' : 'desktop'}`}>
                     {languages.map((lang) => (
                         <div
                             key={lang.value}
