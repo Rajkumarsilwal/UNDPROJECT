@@ -10,7 +10,7 @@ import './App.css';
 import logo from './logo.svg';
 import PresidentEndorsement from './components/PresidentEndorsement';
 import AboutPresident from './components/AboutPresident/AboutPresident';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 import PostList from './components/PostList';
 import NavigationLinks from './components/Navbar/NormalMenu/NormalMenuBar';
 import MobileMenu from './components/Navbar/MobileMenu/MobileMenu';
