@@ -10,6 +10,7 @@ export const fetchPosts9Days = async () => {
     const toDate = today.clone().subtract(3 * i, 'days').format('YYYY-MM-DD');
 
     try {
+      console.log("Fetching apps");
       const response = await fetch(
         `https://apps.und.edu/demo/public/index.php/post?from=${encodeURIComponent(fromDate)}&to=${encodeURIComponent(toDate)}`
       );
