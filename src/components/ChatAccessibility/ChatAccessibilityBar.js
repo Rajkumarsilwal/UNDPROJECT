@@ -18,37 +18,49 @@ import InvertColorsOffIcon from '@mui/icons-material/InvertColorsOff';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Chatbot from '../ChatBox/ChatBot';
 import ReadContext from './AccessbilityButtons/ReadContext';
-import useFontScaling from './AccessbilityButtons/IncreaseDecreaseFont';
+
 import HighContrastToggle from './AccessbilityButtons/HighContrastToggle';
 import SoftContrastToogle from './AccessbilityButtons/SoftContrastToogle';
 
 
+import useFontScaling from './AccessbilityButtons/IncreaseDecreaseFont';
+
 
 const ChatAccessibilityButton = () => {
-    const [showChat, setShowChat] = useState(false);
-    const [showAccessibilityActions, setShowAccessibilityActions] = useState(false);
-
-    const { isReadingAloud, toggleReadAloud } = ReadContext()
-
-    const { increaseFont, decreaseFont } = useFontScaling('#reading-area');
-
     // Use isSmallScreen (700px) for icon-only toggle
     const isSmallScreen = useMediaQuery('(max-width:1209px)');
-
     const iconFontSize = isSmallScreen ? 'small' : 'medium';
     const buttonWidth = isSmallScreen ? 40 : 140;
     const buttonPadding = isSmallScreen ? '8px' : '12px';
     const actionButtonSize = isSmallScreen ? 'small' : 'medium';
     const buttonHeight = 40;
 
+    const [showChat, setShowChat] = useState(false);
+    const [showAccessibilityActions, setShowAccessibilityActions] = useState(false);
+    const { isReadingAloud, toggleReadAloud } = ReadContext()
+    const { increaseFont, decreaseFont } = useFontScaling();
     const { defaultContrast, isHighContrast } = HighContrastToggle();
     const { defaultSoftContrast, isSoftContrast } = SoftContrastToogle();
 
 
 
     const accessibilityActions = [
-        { icon: <TextIncreaseIcon />, name: 'Increase Font', onClick: increaseFont },
-        { icon: <TextDecreaseIcon />, name: 'Decrease Font', onClick: decreaseFont },
+        {
+            icon: <TextIncreaseIcon />,
+            name: 'Increase Font',
+            onClick: () => {
+                console.log('Increase Font clicked');
+                increaseFont();
+            }
+        },
+        {
+            icon: <TextDecreaseIcon />,
+            name: 'Decrease Font',
+            onClick: () => {
+                console.log('Decrease Font clicked');
+                decreaseFont();
+            }
+        },
         {
             icon: isHighContrast ? <FormatColorResetIcon /> : <ColorLensIcon />,
             name: isHighContrast ? 'Normal Contrast' : 'High Contrast',

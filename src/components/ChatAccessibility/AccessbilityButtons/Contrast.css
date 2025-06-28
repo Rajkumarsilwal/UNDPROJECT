@@ -1,0 +1,32 @@
+body.kindle-mode {
+    background-color: #f5e6c8 !important;
+    /* Light sepia */
+    color: #4b3f2f !important;
+    /* Dark brown */
+}
+
+body.kindle-mode a {
+    color: #7b4f1d !important;
+    background-color: transparent !important;
+}
+
+body.kindle-mode button {
+    background-color: #d8c3a5 !important;
+    color: #4b3f2f !important;
+    border: 1px solid #4b3f2f !important;
+}
+
+body.kindle-mode .MuiTypography-root {
+    color: #4b3f2f !important;
+    background-color: #f5e6c8 !important;
+}
+
+body.kindle-mode input {
+    background-color: #f5e6c8 !important;
+    color: #4b3f2f !important;
+    border: 1px solid #7b4f1d !important;
+}
+
+body.kindle-mode .MuiPaper-root {
+    background-color: #f5e6c8 !important;
+}
