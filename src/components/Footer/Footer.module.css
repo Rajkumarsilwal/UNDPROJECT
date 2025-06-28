@@ -1,8 +1,20 @@
 .footerRoot {
     background-color: #000;
     color: #fff;
-    padding: 2rem 1rem;
+    padding: 1rem 1rem;
     font-family: var(--font-family);
+}
+
+
+.footerItem {
+    padding-top: 10px !important;
+    margin-top: 16px !important;
+}
+
+.footerRoot h5 {
+    font-weight: bold;
+    font-family: var(--font-family);
+    font-size: clamp(0.875rem, 4vw, 1.375rem);
 }
 
 .footerRoot h6 {
@@ -16,18 +28,78 @@
     align-items: center;
     flex-wrap: wrap;
     background: #111;
-    padding: 1.5rem;
+    padding: clamp(0.1rem, 2vw, 1.5rem);
     border-radius: 8px;
+}
+
+@media (max-width: 725px) {
+    .ctaSection {
+        flex-direction: column;
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .ctaHeading {
+        text-align: center;
+        transition: all 0.5s ease-in-out;
+    }
+
+    .ctaButton {
+        margin-top: 1rem !important;
+        align-self: center;
+        transition: all 0.5s ease-in-out;
+    }
 }
 
 .ctaHeading,
 .ctaSubheading {
     color: #fff;
     margin: 0.2rem 0;
+    font-family: var(--font-family) !important;
 }
 
+/* .ctaButton {
+    font-family: var(--font-family) !important;
+    font-weight: bold !important;
+} */
 .ctaButton {
-    font-weight: bold;
+    font-family: var(--font-family) !important;
+    font-weight: bold !important;
+    width: 280px;
+    transition: all 0.3s ease-in-out;
+    will-change: transform;
+}
+
+.ctaButton:hover {
+    animation: wobble 0.9s;
+}
+
+@keyframes wobble {
+
+    0%,
+    100% {
+        transform: translateX(0%);
+    }
+
+    15% {
+        transform: translateX(-25%) rotate(-5deg);
+    }
+
+    30% {
+        transform: translateX(20%) rotate(3deg);
+    }
+
+    45% {
+        transform: translateX(-15%) rotate(-3deg);
+    }
+
+    60% {
+        transform: translateX(10%) rotate(2deg);
+    }
+
+    75% {
+        transform: translateX(-5%) rotate(-1deg);
+    }
 }
 
 .linkList {
@@ -37,30 +109,40 @@
 }
 
 .linkList li {
-    margin-bottom: 0.4rem;
+    margin-bottom: 0.6rem;
 }
 
 .linkList a {
     color: #ccc;
     text-decoration: none;
+    font-family: var(--font-family);
 }
 
 .linkList a:hover {
     color: #009A44;
     text-decoration: underline;
+    font-weight: bold;
+    transform: translateY(-2px);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
 }
 
 .socialIcons {
     display: flex;
-    gap: 0.6rem;
+    gap: 0.9rem;
 }
 
 .socialIcons a {
     color: #fff;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     transition: color 0.3s;
 }
 
 .socialIcons a:hover {
     color: #009A44;
+    text-decoration: underline;
+    font-weight: bold;
+    transform: translateY(-4px);
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
 }
