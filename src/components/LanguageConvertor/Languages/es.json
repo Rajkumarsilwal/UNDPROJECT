@@ -5,14 +5,14 @@
     "president": {
         "presidentsEndorsement": "Respaldo del Presidente",
         "messageFromPresident": "Mensaje del Presidente",
-        "messageContent": "Estamos encantados de anunciar nuestro apoyo inquebrantable a la última campaña de redes sociales de la Universidad. Esta iniciativa representa una oportunidad crucial para que nuestra comunidad se una, interactúe y genere un cambio significativo. ¿Tienes ideas o comentarios sobre los objetivos de nuestra campaña? ¡Nos encantaría saber de ti!",
-        "campaignGoals": "Objetivos de la Campaña",
-        "goal1Title": "Fomentar la Participación",
-        "goal1Content": "Nuestro objetivo principal es fomentar una comunidad en línea vibrante donde cada voz sea escuchada y valorada. A través de la participación activa y la colaboración, podemos amplificar nuestro impacto colectivo y lograr un cambio positivo.",
-        "goal2Title": "Promover la Diversidad e Inclusión",
-        "goal2Content": "La diversidad es nuestra fortaleza, y la inclusión es nuestra base. Nos esforzamos por crear un espacio en línea inclusivo que celebre diversas perspectivas, culturas y experiencias.",
-        "goal3Title": "Impulsar la Innovación",
-        "goal3Content": "La innovación impulsa el progreso, y las redes sociales son una herramienta poderosa para estimular la creatividad y la innovación. Fomentamos el pensamiento innovador y las ideas audaces que expanden los límites de lo posible."
+        "messageContent": "Estamos encantados de anunciar nuestro apoyo inquebrantable a la última campaña de redes sociales de la Universidad. Esta iniciativa representa una oportunidad crucial para que nuestra comunidad se una, interactúe y genere un cambio significativo. ¿Tienes pensamientos o comentarios sobre nuestras metas de campaña? ¡Nos encantaría escucharlos!",
+        "campaignGoals": "Metas de la Campaña",
+        "goal1Title": "Fomentar el Compromiso",
+        "goal1Content": "Nuestro objetivo principal es fomentar una comunidad en línea vibrante donde cada voz sea escuchada y valorada. A través de la participación activa y la colaboración, podemos amplificar nuestro impacto colectivo y generar un cambio positivo.",
+        "goal2Title": "Promoción de la Diversidad y la Inclusión",
+        "goal2Content": "La diversidad es nuestra fortaleza y la inclusión es nuestra base. Nos esforzamos por crear un espacio en línea inclusivo que celebre diversas perspectivas, culturas y experiencias. Juntos, podemos construir una comunidad donde todos se sientan bienvenidos y respetados.",
+        "goal3Title": "Impulsando la innovación",
+        "goal3Content": "La innovación impulsa el progreso, y las redes sociales son una herramienta poderosa para fomentar la creatividad y la innovación. Animamos al pensamiento innovador y a las ideas audaces que superan los límites de lo posible. Aprovechemos el poder de las redes sociales para impulsar un cambio positivo y la innovación en nuestra comunidad y más allá."
     },
     "nav": [
         {

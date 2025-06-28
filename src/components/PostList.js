@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import { Box, Typography, Card, CardContent, Avatar } from '@mui/material';
 import FilterPostSearch from './FilterPostSearch';
 import PaginationComponent from './PaginationComponent';
@@ -84,8 +84,18 @@ const PostList = () => {
   const lang = language ?? defaultLanguage;
 
   return (
-    <Box sx={{ mt: 4 }}>
-      <Typography variant='h4' gutterBottom>
+    <Box
+      id="post-list"
+      className="post-list-container"
+      sx={{ mt: 4 }}>
+      <Typography
+        variant='h4'
+        sx={{
+          fontSize: 'clamp(1.5rem, 4vw, 1.7rem)',
+          fontWeight: 'bold',
+          fontFamily: '"Helvetica Neue", "Helvetica", Arial, sans-serif'
+        }}
+      >
         {lang?.postList?.Title ?? "Recent Posts"}
       </Typography>
 
@@ -107,7 +117,7 @@ const PostList = () => {
                   <Typography variant='h6'>
                     {highlightText(post.author, searchTerm)}
                   </Typography>
-                  <Typography variant='subtitle2' color='textSecondary'>
+                  <Typography variant='subtitle3' color='textSecondary'>
                     @{highlightText(post.username, searchTerm)} |{' '}
                     {formatToUserTimeZone(post.date)}
                   </Typography>

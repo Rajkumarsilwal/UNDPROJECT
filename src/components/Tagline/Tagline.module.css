@@ -1,0 +1,19 @@
+.headTitleTagline {
+    margin-top: 18px !important;
+    font-weight: bold !important;
+    color: black;
+    font-family: var(--font-family);
+    font-size: clamp(1.9rem, 5vw, 2.9rem) !important;
+    text-align: center;
+    line-height: 1.0 !important;
+    margin-bottom: 6px !important;
+    padding-bottom: 0 !important;
+
+
+}
+
+@media (max-width: 393px) {
+    .headTitleTagline {
+        font-size: 1.6rem !important;
+    }
+}

@@ -1,13 +1,12 @@
-import React, { useContext } from 'react';
+import { useContext } from 'react';
 import { Box, Container, Typography, Link } from '@mui/material';
 import '../App.css';
 import defaultLanguage from './LanguageConvertor/Languages/en.json'
 import { LanguageContext } from './LanguageConvertor/LanguageContext';
 
 const Footer = () => {
-
   const { language } = useContext(LanguageContext);
-  const lang = language || defaultLanguage;
+  const lang = language ?? defaultLanguage;
 
   return (
     <Box

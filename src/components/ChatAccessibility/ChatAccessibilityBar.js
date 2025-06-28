@@ -15,7 +15,7 @@ import Chatbot from '../ChatBox/ChatBot';
 import useAccessibilityActions from './AccessibilityBar';
 
 import ReadContext from './AccessbilityButtons/ReadContext';
-
+import useFontScaling from './AccessbilityButtons/IncreaseDecreaseFont';
 
 
 
@@ -25,6 +25,7 @@ const ChatAccessibilityButton = () => {
 
     const { isReadingAloud, toggleReadAloud } = ReadContext()
 
+    const { increaseFont, decreaseFont } = useFontScaling('#president-wrapper');
 
     // Use isSmallScreen (700px) for icon-only toggle
     const isSmallScreen = useMediaQuery('(max-width:1209px)');
@@ -39,8 +40,10 @@ const ChatAccessibilityButton = () => {
 
 
     const accessibilityActions = [
-        { icon: <TextIncreaseIcon />, name: 'Increase Font', onClick: ('Increase Font Size') },
-        { icon: <TextDecreaseIcon />, name: 'Decrease Font', onClick: ('Decrease Font Size') },
+        // { icon: <TextIncreaseIcon />, name: 'Increase Font', onClick: ('Increase Font Size') },
+        // { icon: <TextDecreaseIcon />, name: 'Decrease Font', onClick: ('Decrease Font Size') },
+        { icon: <TextIncreaseIcon />, name: 'Increase Font', onClick: increaseFont },
+        { icon: <TextDecreaseIcon />, name: 'Decrease Font', onClick: decreaseFont },
         {
             icon: <ContrastIcon />,
             name: isHighContrast ? 'Normal Contrast' : 'High Contrast',

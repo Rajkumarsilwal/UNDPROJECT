@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 
 export default function useReadAloud() {
     const [isReadingAloud, setIsReadingAloud] = useState(false);
-    const utteranceRef = useRef(null); // mutable holder, no re-renders
+    const utteranceRef = useRef(null);
 
     const toggleReadAloud = () => {
         if (isReadingAloud) {
