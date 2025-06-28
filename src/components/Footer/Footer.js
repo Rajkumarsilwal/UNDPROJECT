@@ -39,7 +39,7 @@ const Footer = () => {
         <Grid container spacing={4} mt={4} >
           <Grid item xs={12} sm={6} md={3}
             className={style.footerItem}
-            component="Section"
+            component="section"
             aria-labelledby="footer-und-heading"
           >
             <Typography
