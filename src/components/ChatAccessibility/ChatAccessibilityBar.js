@@ -5,49 +5,72 @@ import ChatIcon from '@mui/icons-material/Chat';
 import AccessibilityNewIcon from '@mui/icons-material/AccessibilityNew';
 import TextIncreaseIcon from '@mui/icons-material/TextIncrease';
 import TextDecreaseIcon from '@mui/icons-material/TextDecrease';
-import ContrastIcon from '@mui/icons-material/Contrast';
+import ColorLensIcon from '@mui/icons-material/ColorLens';
+import FormatColorResetIcon from '@mui/icons-material/FormatColorReset';
+
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import StopIcon from '@mui/icons-material/Stop';
 
+import InvertColors from '@mui/icons-material/InvertColors';
+import InvertColorsOffIcon from '@mui/icons-material/InvertColorsOff';
+
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Chatbot from '../ChatBox/ChatBot';
-import useAccessibilityActions from './AccessibilityBar';
-
 import ReadContext from './AccessbilityButtons/ReadContext';
+
+import HighContrastToggle from './AccessbilityButtons/HighContrastToggle';
+import SoftContrastToogle from './AccessbilityButtons/SoftContrastToogle';
+
+
 import useFontScaling from './AccessbilityButtons/IncreaseDecreaseFont';
 
 
-
 const ChatAccessibilityButton = () => {
-    const [showChat, setShowChat] = useState(false);
-    const [showAccessibilityActions, setShowAccessibilityActions] = useState(false);
-
-    const { isReadingAloud, toggleReadAloud } = ReadContext()
-
-    const { increaseFont, decreaseFont } = useFontScaling('#president-wrapper');
-
     // Use isSmallScreen (700px) for icon-only toggle
     const isSmallScreen = useMediaQuery('(max-width:1209px)');
-
     const iconFontSize = isSmallScreen ? 'small' : 'medium';
     const buttonWidth = isSmallScreen ? 40 : 140;
     const buttonPadding = isSmallScreen ? '8px' : '12px';
     const actionButtonSize = isSmallScreen ? 'small' : 'medium';
     const buttonHeight = 40;
 
-    const { toggleHighContrast, isHighContrast } = useAccessibilityActions();
+    const [showChat, setShowChat] = useState(false);
+    const [showAccessibilityActions, setShowAccessibilityActions] = useState(false);
+    const { isReadingAloud, toggleReadAloud } = ReadContext()
+    const { increaseFont, decreaseFont } = useFontScaling();
+    const { defaultContrast, isHighContrast } = HighContrastToggle();
+    const { defaultSoftContrast, isSoftContrast } = SoftContrastToogle();
+
 
 
     const accessibilityActions = [
-        // { icon: <TextIncreaseIcon />, name: 'Increase Font', onClick: ('Increase Font Size') },
-        // { icon: <TextDecreaseIcon />, name: 'Decrease Font', onClick: ('Decrease Font Size') },
-        { icon: <TextIncreaseIcon />, name: 'Increase Font', onClick: increaseFont },
-        { icon: <TextDecreaseIcon />, name: 'Decrease Font', onClick: decreaseFont },
         {
-            icon: <ContrastIcon />,
+            icon: <TextIncreaseIcon />,
+            name: 'Increase Font',
+            onClick: () => {
+                console.log('Increase Font clicked');
+                increaseFont();
+            }
+        },
+        {
+            icon: <TextDecreaseIcon />,
+            name: 'Decrease Font',
+            onClick: () => {
+                console.log('Decrease Font clicked');
+                decreaseFont();
+            }
+        },
+        {
+            icon: isHighContrast ? <FormatColorResetIcon /> : <ColorLensIcon />,
             name: isHighContrast ? 'Normal Contrast' : 'High Contrast',
-            onClick: toggleHighContrast
+            onClick: defaultContrast,
+        },
+        {
+            icon: isSoftContrast ? <InvertColorsOffIcon /> : <InvertColors />,
+            name: isSoftContrast ? 'Normal Contrast' : 'Soft Contrast',
+            onClick: defaultSoftContrast,
+
         },
         {
             icon: isReadingAloud ? <StopIcon /> : <VolumeUpIcon />,
