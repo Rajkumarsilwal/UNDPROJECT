@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Container, Typography } from '@mui/material';
 import '../App.css';
 import { LanguageContext } from './LanguageConvertor/LanguageContext';
-import defaultLanguage from './LanguageConvertor/Languages/es.json'
+import defaultLanguage from './LanguageConvertor/Languages/es.json';
 
 
 const PresidentEndorsement = () => {

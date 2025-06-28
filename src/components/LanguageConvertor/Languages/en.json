@@ -17,22 +17,27 @@
     "nav": [
         {
             "name": "ACADEMICS",
+            "nameSmall": "Academics",
             "url": "https://und.edu/academics/index.html"
         },
         {
             "name": "ADMISSIONS",
+            "nameSmall": "Admissions",
             "url": "https://und.edu/admissions/index.html"
         },
         {
             "name": "RESEARCH",
+            "nameSmall": "Research",
             "url": "https://und.edu/research/index.html"
         },
         {
             "name": "PROGRAMS",
+            "nameSmall": "Programs",
             "url": "https://und.edu/programs/index.html"
         },
         {
             "name": "ABOUT",
+            "nameSmall": "About",
             "url": "https://und.edu/about/index.html"
         }
     ],
@@ -40,13 +45,44 @@
         "title1": "About The President",
         "title1Content": "Dr. Andrew Armacost was chosen by the State Board of Higher Education to serve as the University of North Dakota’s UND 13th president. Armacost began his tenure as UND President on June 1, 2020. Armacost served as the Dean of the Faculty at the U.S. Air Force Academy. With more than 30 years on active duty and 20 years at the Academy, Armacost served in the rank of Brigadier General as the chief academic officer for this nationally renowned institution."
     },
-    "footerContians": {
-        "title": "Share your thoughts and feedback:"
-    },
     "postList": {
         "Title": "Recent Posts",
         "Loading": "Loading posts...",
         "NoData": "No data available for the given date range.",
         "FilterData": "No matching posts found."
+    },
+    "footerContians": {
+        "title": "Share your thoughts and feedback:",
+        "links": "Quick Links",
+        "title1": "UND",
+        "subTitle1": [
+            "© 2025 University of North Dakota",
+            "Grand Forks, ND",
+            "UND.info@UND.edu",
+            "701.777.3000"
+        ],
+        "title2": "Company",
+        "subTitle2": [
+            {
+                "topic2": "Careers",
+                "url": "https://campus.und.edu/human-resources/careers/index.html"
+            },
+            {
+                "topic2": "Directory",
+                "url": "https://campus.und.edu/directory/index.html"
+            }
+        ],
+        "title3": "Legal",
+        "subTitle3": [
+            {
+                "topic3": "Terms of Use & Privacy",
+                "url": "https://und.edu/about/terms-of-use.html"
+            },
+            {
+                "topic3": "Notice of Discolosure",
+                "url": "https://campus.und.edu/equal-opportunity/required-notices.html#notice-of-nondiscrimination"
+            }
+        ],
+        "title4": ""
     }
 }

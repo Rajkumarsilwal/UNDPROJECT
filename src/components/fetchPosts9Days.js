@@ -18,7 +18,6 @@ export const fetchPosts9Days = async () => {
         throw new Error('Server responded unexpectedly');
       }
       const data = await response.json();
-      console.log('data value::', data);
       allPosts.push(...data);
       allPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
     } catch (error) {

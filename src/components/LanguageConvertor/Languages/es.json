@@ -16,23 +16,28 @@
     },
     "nav": [
         {
-            "name": "ACADÉMICOS",
+            "name": "ACADEMIA",
+            "nameSmall": "Academia",
             "url": "https://und.edu/academics/index.html"
         },
         {
             "name": "ADMISIONES",
+            "nameSmall": "Admisiones",
             "url": "https://und.edu/admissions/index.html"
         },
         {
             "name": "INVESTIGACIÓN",
+            "nameSmall": "Investigación",
             "url": "https://und.edu/research/index.html"
         },
         {
             "name": "PROGRAMAS",
+            "nameSmall": "Programas",
             "url": "https://und.edu/programs/index.html"
         },
         {
             "name": "ACERCA DE",
+            "nameSmall": "Acerca de",
             "url": "https://und.edu/about/index.html"
         }
     ],
@@ -40,13 +45,44 @@
         "title1": "Acerca del Presidente",
         "title1Content": "El Dr. Andrew Armacost fue elegido por la Junta Estatal de Educación Superior para servir como el 13º presidente de la Universidad de Dakota del Norte (UND). Armacost comenzó su mandato como presidente de UND el 1 de junio de 2020. Armacost se desempeñó como Decano de la Facultad en la Academia de la Fuerza Aérea de los Estados Unidos. Con más de 30 años de servicio activo y 20 años en la Academia, Armacost sirvió con el rango de General de Brigada como el jefe académico de esta institución de renombre nacional."
     },
-    "footerContians": {
-        "title": "Comparte tus ideas y comentarios:"
-    },
     "postList": {
         "Title": "Publicaciones Recientes",
         "Loading": "Cargando publicaciones...",
         "NoData": "No hay datos disponibles para el rango de fechas proporcionado.",
         "FilterData": "No se encontraron publicaciones coincidentes."
+    },
+    "footerContians": {
+        "title": "Comparte tus ideas y comentarios:",
+        "links": "Enlaces Rápidos",
+        "title1": "UND",
+        "subTitle1": [
+            "© 2025 University of North Dakota",
+            "Grand Forks, ND",
+            "UND.info@UND.edu",
+            "701.777.3000"
+        ],
+        "title2": "Compañía",
+        "subTitle2": [
+            {
+                "topic2": "Carreras",
+                "url": "https://campus.und.edu/human-resources/careers/index.html"
+            },
+            {
+                "topic2": "Directorio",
+                "url": "https://campus.und.edu/directory/index.html"
+            }
+        ],
+        "title3": "Legal",
+        "subTitle3": [
+            {
+                "topic3": "Condiciones de Uso y Privacidad",
+                "url": "https://und.edu/about/terms-of-use.html"
+            },
+            {
+                "topic3": "Aviso de Divulgación",
+                "url": "https://campus.und.edu/equal-opportunity/required-notices.html#notice-of-nondiscrimination"
+            }
+        ],
+        "title4": ""
     }
 }

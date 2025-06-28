@@ -1,34 +1,66 @@
-.footerContainer {
-    background-color: black;
-    color: white;
-    padding-top: 14px;
-    padding-bottom: 14px;
+.footerRoot {
+    background-color: #000;
+    color: #fff;
+    padding: 2rem 1rem;
+    font-family: var(--font-family);
 }
 
-.footerInner {
-    display: flex !important;
+.footerRoot h6 {
+    font-weight: bold;
+    font-family: var(--font-family);
+}
+
+.ctaSection {
+    display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    gap: 16px;
+    background: #111;
+    padding: 1.5rem;
+    border-radius: 8px;
 }
 
-.footerText {
-    font-family: var(--font-family);
-    font-weight: bold !important;
-    text-align: left;
-    font-size: clamp(0.1rem, 4.3vw, 1.2rem) !important;
+.ctaHeading,
+.ctaSubheading {
+    color: #fff;
+    margin: 0.2rem 0;
 }
 
-.footerLink {
-    font-family: var(--font-family);
-    font-weight: bold !important;
-    font-size: clamp(0.1rem, 4.3vw, 1.2rem) !important;
-    color: white !important;
-    transition: color 0.3s ease, transform 0.3s ease, text-decoration 0.3s ease;
+.ctaButton {
+    font-weight: bold;
 }
 
-.footerLink:hover {
-    color: #009A44 !important;
+.linkList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.linkList li {
+    margin-bottom: 0.4rem;
+}
+
+.linkList a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.linkList a:hover {
+    color: #009A44;
     text-decoration: underline;
+}
+
+.socialIcons {
+    display: flex;
+    gap: 0.6rem;
+}
+
+.socialIcons a {
+    color: #fff;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.socialIcons a:hover {
+    color: #009A44;
 }
