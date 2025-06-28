@@ -10,7 +10,6 @@ import { useContext } from 'react';
 const Footer = () => {
   const { language } = useContext(LanguageContext);
   const lang = language || defaultLanguage;
-  console.log('lang value::', lang);
 
   return (
     <Box component="footer" className={style.footerRoot} role="contentinfo">
