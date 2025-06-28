@@ -5,34 +5,39 @@
     "president": {
         "presidentsEndorsement": "Respaldo del Presidente",
         "messageFromPresident": "Mensaje del Presidente",
-        "messageContent": "Estamos encantados de anunciar nuestro apoyo inquebrantable a la última campaña de redes sociales de la Universidad. Esta iniciativa representa una oportunidad crucial para que nuestra comunidad se una, interactúe y genere un cambio significativo. ¿Tienes ideas o comentarios sobre los objetivos de nuestra campaña? ¡Nos encantaría saber de ti!",
-        "campaignGoals": "Objetivos de la Campaña",
-        "goal1Title": "Fomentar la Participación",
-        "goal1Content": "Nuestro objetivo principal es fomentar una comunidad en línea vibrante donde cada voz sea escuchada y valorada. A través de la participación activa y la colaboración, podemos amplificar nuestro impacto colectivo y lograr un cambio positivo.",
-        "goal2Title": "Promover la Diversidad e Inclusión",
-        "goal2Content": "La diversidad es nuestra fortaleza, y la inclusión es nuestra base. Nos esforzamos por crear un espacio en línea inclusivo que celebre diversas perspectivas, culturas y experiencias.",
-        "goal3Title": "Impulsar la Innovación",
-        "goal3Content": "La innovación impulsa el progreso, y las redes sociales son una herramienta poderosa para estimular la creatividad y la innovación. Fomentamos el pensamiento innovador y las ideas audaces que expanden los límites de lo posible."
+        "messageContent": "Estamos encantados de anunciar nuestro apoyo inquebrantable a la última campaña de redes sociales de la Universidad. Esta iniciativa representa una oportunidad crucial para que nuestra comunidad se una, interactúe y genere un cambio significativo. ¿Tienes pensamientos o comentarios sobre nuestras metas de campaña? ¡Nos encantaría escucharlos!",
+        "campaignGoals": "Metas de la Campaña",
+        "goal1Title": "Fomentar el Compromiso",
+        "goal1Content": "Nuestro objetivo principal es fomentar una comunidad en línea vibrante donde cada voz sea escuchada y valorada. A través de la participación activa y la colaboración, podemos amplificar nuestro impacto colectivo y generar un cambio positivo.",
+        "goal2Title": "Promoción de la Diversidad y la Inclusión",
+        "goal2Content": "La diversidad es nuestra fortaleza y la inclusión es nuestra base. Nos esforzamos por crear un espacio en línea inclusivo que celebre diversas perspectivas, culturas y experiencias. Juntos, podemos construir una comunidad donde todos se sientan bienvenidos y respetados.",
+        "goal3Title": "Impulsando la innovación",
+        "goal3Content": "La innovación impulsa el progreso, y las redes sociales son una herramienta poderosa para fomentar la creatividad y la innovación. Animamos al pensamiento innovador y a las ideas audaces que superan los límites de lo posible. Aprovechemos el poder de las redes sociales para impulsar un cambio positivo y la innovación en nuestra comunidad y más allá."
     },
     "nav": [
         {
-            "name": "ACADÉMICOS",
+            "name": "ACADEMIA",
+            "nameSmall": "Academia",
             "url": "https://und.edu/academics/index.html"
         },
         {
             "name": "ADMISIONES",
+            "nameSmall": "Admisiones",
             "url": "https://und.edu/admissions/index.html"
         },
         {
             "name": "INVESTIGACIÓN",
+            "nameSmall": "Investigación",
             "url": "https://und.edu/research/index.html"
         },
         {
             "name": "PROGRAMAS",
+            "nameSmall": "Programas",
             "url": "https://und.edu/programs/index.html"
         },
         {
             "name": "ACERCA DE",
+            "nameSmall": "Acerca de",
             "url": "https://und.edu/about/index.html"
         }
     ],
@@ -40,13 +45,44 @@
         "title1": "Acerca del Presidente",
         "title1Content": "El Dr. Andrew Armacost fue elegido por la Junta Estatal de Educación Superior para servir como el 13º presidente de la Universidad de Dakota del Norte (UND). Armacost comenzó su mandato como presidente de UND el 1 de junio de 2020. Armacost se desempeñó como Decano de la Facultad en la Academia de la Fuerza Aérea de los Estados Unidos. Con más de 30 años de servicio activo y 20 años en la Academia, Armacost sirvió con el rango de General de Brigada como el jefe académico de esta institución de renombre nacional."
     },
-    "footerContians": {
-        "title": "Comparte tus ideas y comentarios:"
-    },
     "postList": {
         "Title": "Publicaciones Recientes",
         "Loading": "Cargando publicaciones...",
         "NoData": "No hay datos disponibles para el rango de fechas proporcionado.",
         "FilterData": "No se encontraron publicaciones coincidentes."
+    },
+    "footerContians": {
+        "title": "Comparte tus ideas y comentarios:",
+        "links": "Enlaces Rápidos",
+        "title1": "UND",
+        "subTitle1": [
+            "© 2025 University of North Dakota",
+            "Grand Forks, ND",
+            "UND.info@UND.edu",
+            "701.777.3000"
+        ],
+        "title2": "Compañía",
+        "subTitle2": [
+            {
+                "topic2": "Carreras",
+                "url": "https://campus.und.edu/human-resources/careers/index.html"
+            },
+            {
+                "topic2": "Directorio",
+                "url": "https://campus.und.edu/directory/index.html"
+            }
+        ],
+        "title3": "Legal",
+        "subTitle3": [
+            {
+                "topic3": "Condiciones de Uso y Privacidad",
+                "url": "https://und.edu/about/terms-of-use.html"
+            },
+            {
+                "topic3": "Aviso de Divulgación",
+                "url": "https://campus.und.edu/equal-opportunity/required-notices.html#notice-of-nondiscrimination"
+            }
+        ],
+        "title4": ""
     }
 }

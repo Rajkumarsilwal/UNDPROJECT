@@ -9,14 +9,14 @@ import {
 import './App.css';
 import logo from './logo.svg';
 import PresidentEndorsement from './components/PresidentEndorsement';
-import AboutPresident from './components/AboutPresident';
-import Footer from './components/Footer';
+import AboutPresident from './components/AboutPresident/AboutPresident';
+import Footer from './components/Footer/Footer';
 import PostList from './components/PostList';
 import NavigationLinks from './components/Navbar/NormalMenu/NormalMenuBar';
 import MobileMenu from './components/Navbar/MobileMenu/MobileMenu';
 import LanguageSwitcher from './components/LanguageConvertor/LanguageSwitcher/LanguageSwitcher';
 import ChatAccessibilityButton from './components/ChatAccessibility/ChatAccessibilityBar';
-import TaglineSection from './components/Tagline';
+import TaglineSection from './components/Tagline/Tagline';
 
 
 
@@ -86,10 +86,9 @@ function App() {
       </AppBar>
 
       {/* Tagline Section */}
-      <Box sx={{ textAlign: 'center', mt: isDesktop ? '160px' : '90px', mb: 4 }}>
+      <Box sx={{ textAlign: 'center', mt: isDesktop ? '160px' : '90px', mb: 2 }}>
         <TaglineSection />
       </Box>
-
 
 
       {/* Main Content */}

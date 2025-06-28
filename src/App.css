@@ -1,7 +1,16 @@
+:root {
+  --base-font: 16px;
+  --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+html {
+  font-size: 100%;
+  /* equivalent to 16px */
+}
+
 /* General styling */
 .App {
-  --main-font: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  font-family: var(--main-font);
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
 }
@@ -22,14 +31,10 @@
   text-align: center;
 }
 
-html {
-  font-size: 100%;
-  /* 16px default */
-}
 
 /* PresidentEndorsement font for PresidentEndorsement  */
 body {
-  font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  font-family: var(--font-family);
   margin: 0;
   padding: 0;
   line-height: 1.6;
@@ -38,8 +43,7 @@ body {
 /* Specific styles for PresidentEndorsement */
 /* h1 for main heading i.e: President's Endorsement */
 .president-endorsement h1 {
-  font-size: clamp(1.5rem, 4.1vw, 2.625rem);
-  /* font-size: 43px; */
+  font-size: clamp(1.5rem, 3.5vw, 2.56rem);
   font-weight: bold;
   text-align: left;
   white-space: normal;
@@ -50,29 +54,29 @@ body {
 /* h2 for secondary heading i.e. message from the president
    and Campaign Goals */
 .president-endorsement h2 {
-  /* font-size: clamp(21px, 3.5vw, 33px); */
-  /* font-size: 33px; */
-  font-size: clamp(1.3125rem, 3.5vw, 2.0625rem);
+  font-size: clamp(1.38rem, 3vw, 2.25rem);
   font-weight: bold;
   text-align: left;
 }
 
 /* h3 for heading under Campiagn Goals */
 .president-endorsement h3 {
-  /* font-size: clamp(18px, 3.4vw, 30px); */
-  /* font-size: 30px; */
-  font-size: clamp(1.125rem, 3.4vw, 1.875rem);
+  font-size: clamp(1.25rem, 2.5vw, 1.9rem);
   font-weight: bold;
   text-align: left;
 }
 
 .president-endorsement p {
-  /* font-size: clamp(10px, 4vw, 18px); */
-  /* font-size: 18px; */
-  font-size: clamp(1rem, 4vw, 1.125rem);
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  text-align: left;
   text-align: justify;
   margin-bottom: 1.45rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
 }
+
+
+
 
 
 /* High Contrast Mode */
@@ -101,3 +105,16 @@ body.high-contrast .MuiTypography-root {
   background-color: black !important;
   color: yellow !important;
 }
+
+body.high-contrast input {
+  color: yellow !important;
+}
+
+/* body.high-contrast .MuiOutlinedInput-notchedOutline {
+  border-color: yellow !important;
+  background-color: black !important;
+}
+
+body.high-contrast .MuiOutlinedInput-notchedOutline legend {
+  color: yellow !important;
+} */
