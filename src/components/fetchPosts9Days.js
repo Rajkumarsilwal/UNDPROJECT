@@ -62,7 +62,12 @@ export const fetchPosts9Days = async ({ signal }) => {
     const url = buildDateRangeUrl(BASE_URL, fromDate, toDate);
 
     try {
-      const response = await fetch(url, { signal });
+      const response = await fetch(url, {
+        signal,
+        headers: {
+          'Accept': 'application/json',
+        },
+      });
 
       if (!response.ok) {
         throw new Error(`Server responded with status ${response.status}`);

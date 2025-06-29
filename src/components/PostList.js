@@ -14,7 +14,7 @@ const PostList = () => {
   const [searchTerm, setSearchTerm] = useState('');
   const [page, setPage] = useState(1);
   const [isLoading, setIsLoading] = useState(true);
-  const postsPerPage = 4;
+  const postsPerPage = 5;
 
   useEffect(() => {
     const memoryLeakPrevent = new AbortController();
