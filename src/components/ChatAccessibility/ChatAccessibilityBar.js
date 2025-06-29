@@ -120,6 +120,7 @@ const ChatAccessibilityButton = () => {
                         opacity: showChat ? 1 : 0.5,
                         '&:hover': {
                             opacity: 1,
+                            backgroundColor: '#009A44',
                         }
                     }}
                 >
