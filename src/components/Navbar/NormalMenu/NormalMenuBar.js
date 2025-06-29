@@ -16,7 +16,10 @@ const NormalMenuBar = ({ direction = 'row' }) => {
     const languageAttribute = currentLang || 'en';
 
     return (
-        <nav>
+        <nav
+            role="navigation"
+            aria-label="Main Site Navigation"
+        >
             <div className="menuContainer"
                 data-lang={languageAttribute}
                 style={{ flexDirection: direction }}>
