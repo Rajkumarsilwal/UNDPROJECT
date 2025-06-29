@@ -43,7 +43,6 @@ const ChatAccessibilityButton = () => {
             icon: <TextIncreaseIcon />,
             name: 'Increase Font',
             onClick: () => {
-                console.log('Increase Font clicked');
                 increaseFont();
             }
         },
@@ -51,7 +50,6 @@ const ChatAccessibilityButton = () => {
             icon: <TextDecreaseIcon />,
             name: 'Decrease Font',
             onClick: () => {
-                console.log('Decrease Font clicked');
                 decreaseFont();
             }
         },

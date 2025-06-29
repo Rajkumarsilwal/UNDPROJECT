@@ -43,7 +43,7 @@ body {
 /* Specific styles for PresidentEndorsement */
 /* h1 for main heading i.e: President's Endorsement */
 .president-endorsement h1 {
-  font-size: clamp(1.5rem, 3.5vw, 2.56rem);
+  font-size: clamp(1.46rem, 3.5vw, 2.559rem);
   font-weight: bold;
   text-align: left;
   white-space: normal;
@@ -73,4 +73,113 @@ body {
   margin-bottom: 1.45rem;
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.6);
+  ;
+}
+
+
+/* 
+App.js CSS properties */
+/* Main App Container */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* App Header (Navbar) */
+.app-header {
+  background-color: black !important;
+  z-index: 1300;
+}
+
+/* Header Toolbar (inside AppBar) */
+.app-header-toolbar {
+  display: flex;
+  justify-content: space-between;
+  height: 75px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-color: black;
+}
+
+/* Logo Container */
+.app-logo-container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+  background-color: black;
+}
+
+/* Site Logo */
+.app-logo {
+  height: 60px;
+  max-width: 100%;
+  width: auto;
+}
+
+/* Logo Size for Small Screens (Mobile) */
+@media (max-width: 600px) {
+  .app-logo {
+    height: 32px;
+    max-width: 80%;
+  }
+}
+
+/* Desktop Navigation Menu Container */
+.app-desktop-nav-container {
+  background-color: #FFF;
+  border-top: 1px solid #AEAEAE;
+}
+
+/* Desktop Navigation Links Layout */
+.app-desktop-nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 85px;
+}
+
+/* Tagline Section (Below Navbar) */
+.app-tagline-section.desktop {
+  text-align: center;
+  margin-top: 160px;
+  margin-bottom: 16px;
+}
+
+.app-tagline-section.mobile {
+  text-align: center;
+  margin-top: 90px;
+  margin-bottom: 16px;
+}
+
+/* Main Content Wrapper */
+.app-main-content {
+  flex: 1;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+/* Layout for Main Content Sections (Endorsement + About President) */
+.app-main-content-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* On Medium+ Screens, Make Side-by-Side Layout */
+@media (min-width: 768px) {
+  .app-main-content-sections {
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+
+/* President Endorsement Section */
+.app-endorsement-section {
+  flex: 2;
+}
+
+/* About President Section */
+.app-about-president-section {
+  flex: 1;
 }

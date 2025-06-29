@@ -26,7 +26,6 @@ const Chatbot = ({ handleClose }) => {
             botResponse = "I'm your virtual assistant chatbot.";
         } else {
             try {
-                // for local hosting http://localhost:8000/chatbot
                 const chatgptResponse = await fetch('https://chatgptapi-8lgp.onrender.com/chatbot', {
                     method: 'POST',
                     headers: { 'Content-Type': 'application/json' },
@@ -43,7 +42,6 @@ const Chatbot = ({ handleClose }) => {
                 botResponse = 'Sorry, I could not connect to AI right now.';
             }
         }
-
         setMessages(prev => [...prev, { fromUser: false, text: botResponse }]);
     };
 
