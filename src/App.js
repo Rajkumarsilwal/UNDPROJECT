@@ -72,10 +72,10 @@ function App() {
             <AboutPresident />
           </Box>
         </Box>
-
+        {/* Post From API */}
         <PostList />
       </Container>
-
+      {/* Floating Chat and Accessibilty */}
       <ChatAccessibilityButton />
       <Footer />
     </Box>
