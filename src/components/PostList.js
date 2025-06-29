@@ -130,7 +130,7 @@ const PostList = () => {
                   </Typography>
 
                   {/* Post Message */}
-                  <Typography variant="body1" sx={{ mt: 1 }}>
+                  <Typography variant="body1" sx={{ mt: 1, textAlign: 'justify' }}>
                     {highlightText(post.message, searchTerm)}
                   </Typography>
 
