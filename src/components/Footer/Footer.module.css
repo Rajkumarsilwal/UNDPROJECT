@@ -32,7 +32,7 @@
     border-radius: 8px;
 }
 
-@media (max-width: 725px) {
+@media (max-width: 900px) {
     .ctaSection {
         flex-direction: column;
         text-align: center;

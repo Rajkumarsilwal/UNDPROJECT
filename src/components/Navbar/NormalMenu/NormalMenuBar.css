@@ -4,7 +4,7 @@
     padding: 10px;
     white-space: nowrap;
     flex-wrap: wrap;
-    overflow-x: visible;
+    overflow-x: hidden;
     gap: 16px;
 
 }
@@ -44,7 +44,7 @@
     .menuContainer[data-lang='en'] {
         gap: 140px;
         flex-wrap: nowrap;
-        overflow-x: auto;
+        overflow-x: hidden;
     }
 
     .menuContainer[data-lang='es'] {

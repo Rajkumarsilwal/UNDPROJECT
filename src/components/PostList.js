@@ -17,9 +17,7 @@ const PostList = () => {
   const postsPerPage = 4;
 
   useEffect(() => {
-
     const memoryLeakPrevent = new AbortController();
-
     const fetchData = async () => {
       try {
         const allPosts = await fetchPosts9Days({ signal: memoryLeakPrevent.signal });
@@ -70,16 +68,13 @@ const PostList = () => {
   const formatToUserTimeZone = (date) => {
     return moment.utc(date).local().format('YYYY-MM-DD hh:mm A z');
   };
+
   const totalPages = Math.ceil(filteredPosts.length / postsPerPage) || 1;
   const validPage = Math.min(page, totalPages);
   const indexOfLastPost = validPage * postsPerPage;
   const indexOfFirstPost = indexOfLastPost - postsPerPage;
   const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
-  // const indexOfLastPost = page * postsPerPage;
-  // const indexOfFirstPost = indexOfLastPost - postsPerPage;
-  // const currentPosts = filteredPosts.slice(indexOfFirstPost, indexOfLastPost);
 
-  // For language conversion 
   const { language } = useContext(LanguageContext);
   const lang = language ?? defaultLanguage;
 
@@ -110,23 +105,38 @@ const PostList = () => {
       ) : (
         <>
           {currentPosts.map((post) => (
-            <Card key={post.id} variant='outlined' sx={{ mb: 2 }}>
+            <Card
+              key={post.id}
+              variant="outlined"
+              sx={{ mb: 2 }}
+              role="article"
+              aria-label={`Post by ${post.author}, posted on ${formatToUserTimeZone(post.date)}`}
+            >
               <CardContent sx={{ display: 'flex', gap: 2 }}>
-                <Avatar src={post.image} alt={post.author} sx={{ width: 56, height: 56 }} />
+                <Avatar
+                  src={post.image}
+                  alt={`Avatar of ${post.author}`}
+                  sx={{ width: 56, height: 56 }}
+                />
                 <Box>
-                  <Typography variant='h6'>
+                  {/* Author Name as Heading */}
+                  <Typography variant="h6" component="h2">
                     {highlightText(post.author, searchTerm)}
                   </Typography>
-                  <Typography variant='subtitle3' color='textSecondary'>
-                    @{highlightText(post.username, searchTerm)} |{' '}
-                    {formatToUserTimeZone(post.date)}
+
+                  {/* Username and Date */}
+                  <Typography variant="subtitle2" color="textSecondary">
+                    @{highlightText(post.username, searchTerm)} | {formatToUserTimeZone(post.date)}
                   </Typography>
-                  <Typography variant='body1' sx={{ mt: 1 }}>
+
+                  {/* Post Message */}
+                  <Typography variant="body1" sx={{ mt: 1, textAlign: 'justify' }}>
                     {highlightText(post.message, searchTerm)}
                   </Typography>
-                  <Typography variant='caption' color='textSecondary'>
-                    Location: {highlightText(post.location, searchTerm)} | Likes: {post.likes} |
-                    Reposts: {post.reposts}
+
+                  {/* Location and Stats */}
+                  <Typography variant="caption" color="textSecondary" role="contentinfo">
+                    Location: {highlightText(post.location, searchTerm)} | Likes: {post.likes} | Reposts: {post.reposts}
                   </Typography>
                 </Box>
               </CardContent>

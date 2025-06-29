@@ -7,22 +7,16 @@ import TextIncreaseIcon from '@mui/icons-material/TextIncrease';
 import TextDecreaseIcon from '@mui/icons-material/TextDecrease';
 import ColorLensIcon from '@mui/icons-material/ColorLens';
 import FormatColorResetIcon from '@mui/icons-material/FormatColorReset';
-
 import VolumeUpIcon from '@mui/icons-material/VolumeUp';
 import RestartAltIcon from '@mui/icons-material/RestartAlt';
 import StopIcon from '@mui/icons-material/Stop';
-
 import InvertColors from '@mui/icons-material/InvertColors';
 import InvertColorsOffIcon from '@mui/icons-material/InvertColorsOff';
-
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Chatbot from '../ChatBox/ChatBot';
 import ReadContext from './AccessbilityButtons/ReadContext';
-
 import HighContrastToggle from './AccessbilityButtons/HighContrastToggle';
 import SoftContrastToogle from './AccessbilityButtons/SoftContrastToogle';
-
-
 import useFontScaling from './AccessbilityButtons/IncreaseDecreaseFont';
 
 
@@ -49,7 +43,6 @@ const ChatAccessibilityButton = () => {
             icon: <TextIncreaseIcon />,
             name: 'Increase Font',
             onClick: () => {
-                console.log('Increase Font clicked');
                 increaseFont();
             }
         },
@@ -57,7 +50,6 @@ const ChatAccessibilityButton = () => {
             icon: <TextDecreaseIcon />,
             name: 'Decrease Font',
             onClick: () => {
-                console.log('Decrease Font clicked');
                 decreaseFont();
             }
         },
@@ -106,6 +98,7 @@ const ChatAccessibilityButton = () => {
                 {/* Chat Button */}
                 <Button
                     className="chat-toggle-button"
+                    aria-label={showChat ? 'Close chat' : 'Open chat'}
                     variant="contained"
                     color="success"
                     onClick={() => {
@@ -125,6 +118,7 @@ const ChatAccessibilityButton = () => {
                         opacity: showChat ? 1 : 0.5,
                         '&:hover': {
                             opacity: 1,
+                            backgroundColor: '#009A44',
                         }
                     }}
                 >
@@ -178,6 +172,7 @@ const ChatAccessibilityButton = () => {
                                 <Button
                                     className="accessibility-action-button"
                                     key={name}
+                                    aria-label={name}
                                     variant="outlined"
                                     startIcon={React.cloneElement(icon, { fontSize: iconFontSize })}
                                     size={actionButtonSize}

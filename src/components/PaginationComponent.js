@@ -7,16 +7,22 @@ const PaginationComponent = ({ posts, postsPerPage, onPaginate }) => {
   const totalPages = Math.ceil(posts.length / postsPerPage);
 
   useEffect(() => {
-    onPaginate(page); // Pass the current page back to the parent
+    onPaginate(page);
   }, [page, posts, onPaginate]);
 
   return (
-    <Box sx={{ display: "flex", justifyContent: "center", mt: 2 }}>
+    <Box
+      sx={{ display: "flex", justifyContent: "center", mt: 2 }}
+      className="pagination-wrapper"
+      role="navigation"
+      aria-label="Post Pagination Navigation"
+    >
       <Pagination
         count={totalPages}
         page={page}
         onChange={(e, value) => setPage(value)}
         color="primary"
+        aria-label={`Pagination navigation, current page ${page} of ${totalPages}`}
       />
     </Box>
   );
