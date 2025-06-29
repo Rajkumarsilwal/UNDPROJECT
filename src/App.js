@@ -1,11 +1,10 @@
 
-import React, { useEffect } from 'react';
+import React from 'react';
 import {
   AppBar,
   Toolbar,
   Container,
   Box,
-  useMediaQuery,
 } from '@mui/material';
 import './App.css';
 import logo from './logo.svg';
@@ -18,14 +17,16 @@ import MobileMenu from './components/Navbar/MobileMenu/MobileMenu';
 import LanguageSwitcher from './components/LanguageConvertor/LanguageSwitcher/LanguageSwitcher';
 import ChatAccessibilityButton from './components/ChatAccessibility/ChatAccessibilityBar';
 import TaglineSection from './components/Tagline/Tagline';
+import useWarmupPing from './reacthooks/chatGPTping';
+import responsiveSize from './reacthooks/responsiveSize'
 
 function App() {
-  const isDesktop = useMediaQuery('(min-width:1210px)');
-  const isMobile = useMediaQuery('(max-width:1209px)');
 
-  useEffect(() => {
-    fetch('https://chatgptapi-8lgp.onrender.com/warmup').catch(() => { });
-  }, []);
+  //For chatGPT ping for warmup
+  useWarmupPing();
+
+  // For responsive layout
+  const { isDesktop, isMobile } = responsiveSize();
 
   return (
     <Box className="app-container" role="main">
