@@ -25,7 +25,10 @@ const selectors = [
     '.css-2ulfj5-MuiTypography-root', // Fot postcard name
     '.css-ol7wxs-MuiTypography-root', // For postcard Location, Likes and Reposts
     '.css-1coh8cf-MuiTypography-root',
-    '.menuLink'// Navbar testing
+    '.css-177ip5v-MuiTypography-root',
+    '.css-hav9kw-MuiTypography-root',
+    '.css-ol7wxs-MuiTypography-root',
+    '.menuLink'
 ];
 
 function getFontSize(el) {
