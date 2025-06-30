@@ -47,6 +47,9 @@ body.high-contrast .css-1jy569b-MuiFormLabel-root-MuiInputLabel-root.Mui-focused
     background-color: black !important;
 }
 
+body.high-contrast .css-1ald77x.Mui-focused {
+    color: yellow !important;
+}
 
 
 /* # For soft contrast  */

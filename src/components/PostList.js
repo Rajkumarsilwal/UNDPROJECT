@@ -86,7 +86,7 @@ const PostList = () => {
       <Typography
         variant='h4'
         sx={{
-          fontSize: 'clamp(1.5rem, 4vw, 1.7rem)',
+          fontSize: 'clamp(1.4rem, 4vw, 1.6rem)',
           fontWeight: 'bold',
           fontFamily: '"Helvetica Neue", "Helvetica", Arial, sans-serif'
         }}

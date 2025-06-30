@@ -20,7 +20,7 @@
 .aboutPresidentTitle {
     font-family: var(--font-family);
     font-weight: bold !important;
-    font-size: clamp(1.475rem, 3.4vw, 1.5rem) !important;
+    font-size: clamp(1.35rem, 3vw, 1.45rem) !important;
     line-height: 1 !important;
     margin-bottom: 16px;
 
