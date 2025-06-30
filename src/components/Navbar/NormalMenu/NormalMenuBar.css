@@ -6,7 +6,7 @@
     flex-wrap: wrap;
     overflow-x: hidden;
     gap: 16px;
-
+    max-width: 1150px;
 }
 
 .menuLink {
@@ -21,6 +21,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
 
 .menuLink:hover,
 .menuLink:focus {
