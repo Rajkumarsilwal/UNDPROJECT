@@ -22,6 +22,7 @@ const selectors = [
     '.president-endorsement h2',
     '.president-endorsement h1',
     '.mobile-menu-link-text',
+    '.css-1g372os', // For Recent Post Title
     '.css-2ulfj5-MuiTypography-root', // Fot postcard name
     '.css-ol7wxs-MuiTypography-root', // For postcard Location, Likes and Reposts
     '.css-1coh8cf-MuiTypography-root',
