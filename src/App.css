@@ -129,7 +129,9 @@ App.js CSS properties */
 /* Desktop Navigation Menu Container */
 .app-desktop-nav-container {
   background-color: #FFF;
-  border-top: 1px solid #AEAEAE;
+  border-top: 2px solid #009A44;
+  border-bottom: 2px solid #009A44;
+  ;
 }
 
 /* Desktop Navigation Links Layout */
@@ -137,7 +139,7 @@ App.js CSS properties */
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 85px;
+  height: 75px;
 }
 
 /* Tagline Section (Below Navbar) */
