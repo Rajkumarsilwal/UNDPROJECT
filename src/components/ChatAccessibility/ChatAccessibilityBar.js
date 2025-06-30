@@ -15,9 +15,8 @@ import InvertColorsOffIcon from '@mui/icons-material/InvertColorsOff';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Chatbot from '../ChatBox/ChatBot';
 import ReadContext from './AccessbilityButtons/ReadContext';
-import HighContrastToggle from './AccessbilityButtons/HighContrastToggle';
-import SoftContrastToogle from './AccessbilityButtons/SoftContrastToogle';
 import useFontScaling from './AccessbilityButtons/IncreaseDecreaseFont';
+import useContrastToggle from './AccessbilityButtons/ContrastToggle';
 
 
 const ChatAccessibilityButton = () => {
@@ -33,10 +32,8 @@ const ChatAccessibilityButton = () => {
     const [showAccessibilityActions, setShowAccessibilityActions] = useState(false);
     const { isReadingAloud, toggleReadAloud } = ReadContext()
     const { increaseFont, decreaseFont } = useFontScaling();
-    const { defaultContrast, isHighContrast } = HighContrastToggle();
-    const { defaultSoftContrast, isSoftContrast } = SoftContrastToogle();
 
-
+    const { isHighContrast, isSoftContrast, toggleHighContrast, toggleSoftContrast } = useContrastToggle();
 
     const accessibilityActions = [
         {
@@ -56,13 +53,12 @@ const ChatAccessibilityButton = () => {
         {
             icon: isHighContrast ? <FormatColorResetIcon /> : <ColorLensIcon />,
             name: isHighContrast ? 'Normal Contrast' : 'High Contrast',
-            onClick: defaultContrast,
+            onClick: toggleHighContrast,
         },
         {
             icon: isSoftContrast ? <InvertColorsOffIcon /> : <InvertColors />,
             name: isSoftContrast ? 'Normal Contrast' : 'Soft Contrast',
-            onClick: defaultSoftContrast,
-
+            onClick: toggleSoftContrast,
         },
         {
             icon: isReadingAloud ? <StopIcon /> : <VolumeUpIcon />,
