@@ -49,7 +49,7 @@ function App() {
         {isDesktop && (
           <Box className="app-desktop-nav-container" role="navigation" aria-label="Main Navigation">
             <Box className="app-desktop-nav-links">
-              <NavigationLinks gap={19} />
+              <NavigationLinks />
             </Box>
           </Box>
         )}

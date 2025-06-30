@@ -16,26 +16,33 @@ const NormalMenuBar = ({ direction = 'row' }) => {
     const languageAttribute = currentLang || 'en';
 
     return (
-        <nav
-            role="navigation"
-            aria-label="Main Site Navigation"
-        >
-            <div className="menuContainer"
-                data-lang={languageAttribute}
-                style={{ flexDirection: direction }}>
-                {navigationLinks.map((link) => (
-                    <a
-                        key={link.name}
-                        href={link.url}
-                        className="menuLink"
-                        target="_blank"
-                        rel="noopener noreferrer"
+        <div className="navbarWrapper">
+            <div className="navbarBox">
+                <nav
+                    className="navbar"
+                    role="navigation"
+                    aria-label="Main Site Navigation"
+                >
+                    <ul
+                        className={`navList ${direction}`}
+                        data-lang={languageAttribute}
                     >
-                        {link.name}
-                    </a>
-                ))}
+                        {navigationLinks.map((link) => (
+                            <li key={link.name} className={`navItem ${direction}`}>
+                                <a
+                                    className="navLink"
+                                    href={link.url}
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                >
+                                    {link.name}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
+                </nav>
             </div>
-        </nav>
+        </div>
     );
 };
 
