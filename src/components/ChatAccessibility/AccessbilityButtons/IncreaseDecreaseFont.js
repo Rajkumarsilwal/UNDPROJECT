@@ -28,7 +28,7 @@ const selectors = [
     '.css-177ip5v-MuiTypography-root',
     '.css-hav9kw-MuiTypography-root',
     '.css-ol7wxs-MuiTypography-root',
-    '.menuLink'
+    '.navLink'
 ];
 
 function getFontSize(el) {
