@@ -3,7 +3,7 @@
     font-weight: bold !important;
     color: black;
     font-family: var(--font-family);
-    font-size: clamp(1.9rem, 5vw, 2.9rem) !important;
+    font-size: clamp(1.9rem, 5vw, 2.25rem) !important;
     text-align: center;
     line-height: 1.0 !important;
     margin-bottom: 6px !important;
