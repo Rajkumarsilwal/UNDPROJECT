@@ -15,15 +15,6 @@ html {
   padding: 0;
 }
 
-/* Styling for the logo inside AppBar */
-.App-logo {
-  height: 6vmin;
-  background-color: #000;
-  padding: 5px;
-  pointer-events: none;
-  max-height: 40px;
-  width: auto;
-}
 
 /* Main content section */
 .MainContent {
@@ -39,44 +30,6 @@ body {
   padding: 0;
   line-height: 1.6;
 }
-
-/* Specific styles for PresidentEndorsement */
-/* h1 for main heading i.e: President's Endorsement */
-.president-endorsement h1 {
-  font-size: clamp(1.5rem, 3.5vw, 1.95rem);
-  font-weight: bold;
-  text-align: left;
-  white-space: normal;
-  word-wrap: break-word;
-  overflow-wrap: break-word;
-  margin-bottom: 2.5%;
-}
-
-/* h2 for secondary heading i.e. message from the president
-   and Campaign Goals */
-.president-endorsement h2 {
-  font-size: clamp(1.35rem, 3vw, 1.65rem);
-  font-weight: bold;
-  text-align: left;
-}
-
-/* h3 for heading under Campiagn Goals */
-.president-endorsement h3 {
-  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
-  font-weight: bold;
-  text-align: left;
-}
-
-.president-endorsement p {
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
-  text-align: left;
-  text-align: justify;
-  margin-bottom: 2.5rem;
-  line-height: 1.5;
-  color: rgba(0, 0, 0, 0.6);
-  ;
-}
-
 
 /* 
 App.js CSS properties */
@@ -116,10 +69,19 @@ App.js CSS properties */
   height: 60px;
   max-width: 100%;
   width: auto;
+  object-fit: contain;
+  transition: height 0.3s ease, max-width 0.3s ease;
 }
 
 /* Logo Size for Small Screens (Mobile) */
-@media (max-width: 600px) {
+@media (min-width: 451px) and (max-width: 700px) {
+  .app-logo {
+    height: 50px;
+    max-width: 80%;
+  }
+}
+
+@media (max-width: 450px) {
   .app-logo {
     height: 32px;
     max-width: 80%;
@@ -175,6 +137,44 @@ App.js CSS properties */
     flex-direction: row;
     gap: 40px;
   }
+}
+
+
+/* Specific styles for PresidentEndorsement */
+/* h1 for main heading i.e: President's Endorsement */
+.president-endorsement h1 {
+  font-size: clamp(1.5rem, 3.5vw, 1.95rem);
+  font-weight: bold;
+  text-align: left;
+  white-space: normal;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  margin-bottom: 2.5%;
+}
+
+/* h2 for secondary heading i.e. message from the president
+   and Campaign Goals */
+.president-endorsement h2 {
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: bold;
+  text-align: left;
+}
+
+/* h3 for heading under Campiagn Goals */
+.president-endorsement h3 {
+  font-size: clamp(1.15rem, 2.5vw, 1.4rem);
+  font-weight: bold;
+  text-align: left;
+}
+
+.president-endorsement p {
+  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  text-align: left;
+  text-align: justify;
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.6);
+  ;
 }
 
 /* President Endorsement Section */
