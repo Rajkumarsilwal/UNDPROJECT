@@ -5,7 +5,7 @@
     width: 60px;
     height: 60px;
     border-radius: 15px;
-    background-color: #fff;
+    background-color: var(--color-BWhite);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     overflow: hidden;
     transition: all 0.5s ease-in-out;
@@ -26,8 +26,8 @@
 
 .header {
     padding: 10px;
-    background: #009A44;
-    color: #fff;
+    background: var(--color-BGreen);
+    color: var(--color-BWhite);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -37,7 +37,7 @@
 .closeButton {
     background: none;
     border: none;
-    color: #fff;
+    color: var(--color-BWhite);
     font-size: 18px;
     cursor: pointer;
 }
@@ -64,7 +64,7 @@
 
 .userMessage {
     background: #dcf8c6;
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: var(--font-family);
     padding: 8px 12px;
     border-radius: 12px;
     display: inline-block;
@@ -72,7 +72,7 @@
 }
 
 .botMessage {
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: var(--font-family);
     background: #e0e0e0;
     padding: 8px 12px;
     border-radius: 12px;
@@ -88,7 +88,7 @@
 .inputField {
     flex: 1;
     border: none;
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: var(--font-family);
     padding: 10px;
     outline: none;
     font-size: medium;
@@ -96,8 +96,8 @@
 
 .sendButton {
     padding: 10px;
-    background: #009A44;
-    color: #fff;
+    background: var(--color-BGreen);
+    color: var(--color-BWhite);
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -106,8 +106,8 @@
 .toggleButton {
     width: 100%;
     height: 100%;
-    background: #009A44;
-    color: #fff;
+    background: var(--color-BGreen);
+    color: var(--color-BWhite);
     font-size: 40px;
     border: none;
     border-radius: 15px;

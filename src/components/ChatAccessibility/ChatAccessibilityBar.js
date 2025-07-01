@@ -53,17 +53,23 @@ const ChatAccessibilityButton = () => {
         {
             icon: isHighContrast ? <FormatColorResetIcon /> : <ColorLensIcon />,
             name: isHighContrast ? 'Normal Contrast' : 'High Contrast',
-            onClick: toggleHighContrast,
+            onClick: () => {
+                toggleHighContrast();
+            }
         },
         {
             icon: isSoftContrast ? <InvertColorsOffIcon /> : <InvertColors />,
             name: isSoftContrast ? 'Normal Contrast' : 'Soft Contrast',
-            onClick: toggleSoftContrast,
+            onClick: () => {
+                toggleSoftContrast();
+            },
         },
         {
             icon: isReadingAloud ? <StopIcon /> : <VolumeUpIcon />,
             name: isReadingAloud ? 'Stop Reading' : 'Read Aloud',
-            onClick: toggleReadAloud,
+            onClick: () => {
+                toggleReadAloud();
+            }
         },
         {
             icon: <RestartAltIcon />,
@@ -106,7 +112,7 @@ const ChatAccessibilityButton = () => {
                         width: buttonWidth,
                         padding: buttonPadding,
                         height: buttonHeight,
-                        backgroundColor: '#009A44',
+                        backgroundColor: 'var(--color-BGreen)',
                         fontWeight: 'bold',
                         display: 'flex',
                         alignItems: 'center',
@@ -114,7 +120,7 @@ const ChatAccessibilityButton = () => {
                         opacity: showChat ? 1 : 0.5,
                         '&:hover': {
                             opacity: 1,
-                            backgroundColor: '#009A44',
+                            backgroundColor: 'var(--color-BGreen)',
                         }
                     }}
                 >
@@ -189,8 +195,10 @@ const ChatAccessibilityButton = () => {
                                         fontSize: isSmallScreen ? '0.55rem' : '0.65rem',
                                         lineHeight: 1.2,
                                         backgroundColor: '#ccc',
+                                        transition: 'background-color 0.3s ease, color 0.3s ease',
                                         '&:hover': {
-                                            backgroundColor: '#b3b3b3',
+                                            backgroundColor: '#1565c0',
+                                            color: 'var(--color-BWhite)'
                                         },
                                     }}
                                 >

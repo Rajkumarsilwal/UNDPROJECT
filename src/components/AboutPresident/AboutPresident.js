@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Box, Typography } from '@mui/material';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
-import PresidentImage from '../../pImage.jpg';
+import PresidentImage from '../../assets/images/pImage.jpg';
 import defaultLanguage from '../LanguageConvertor/Languages/en.json';
 import { LanguageContext } from '../LanguageConvertor/LanguageContext';
 import styles from './AboutPresident.module.css';

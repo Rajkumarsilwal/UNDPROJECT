@@ -7,7 +7,7 @@ import {
   Box,
 } from '@mui/material';
 import './App.css';
-import logo from './logo.svg';
+import logo from '../src/assets/images/logo.svg';
 import PresidentEndorsement from './components/PresidentEndorsement';
 import AboutPresident from './components/AboutPresident/AboutPresident';
 import Footer from './components/Footer/Footer';

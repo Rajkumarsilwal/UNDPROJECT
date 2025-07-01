@@ -5,9 +5,9 @@
 }
 
 .language-switcher-button {
-    background-color: #000;
-    color: #fff;
-    border: 1px solid #009A44;
+    background-color: var(--color-BBlack);
+    color: var(--color-BWhite);
+    border: 1px solid var(--color-BGreen);
     border-radius: 10px;
     cursor: pointer;
     display: flex;
@@ -27,27 +27,27 @@
     width: 75px;
     height: 36px;
     font-size: 13px;
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-BBlack);
+    color: var(--color-BWhite);
 
 }
 
 .language-switcher-arrow {
     font-size: 18px;
     font-weight: bold;
-    color: #009A44;
+    color: var(--color-BGreen);
 }
 
 .language-switcher-arrow.mobile {
     font-size: inherit;
     font-weight: bold;
-    color: #009A44;
+    color: var(--color-BGreen);
 }
 
 .language-switcher-dropdown {
     position: absolute;
-    background-color: #000;
-    border: 1px solid #009A44;
+    background-color: var(--color-BBlack);
+    border: 1px solid var(--color-BGreen);
     border-radius: 10px;
     z-index: 9999;
     user-select: none;
@@ -72,7 +72,7 @@
 
 .language-switcher-dropdown.mobile .language-switcher-item:hover,
 .language-switcher-dropdown.mobile .language-switcher-item:focus {
-    background-color: #009A44;
+    background-color: var(--color-BGreen);
     outline: none;
     top: 38px;
     width: 55px;
@@ -87,7 +87,7 @@
 
 .language-switcher-item {
     padding: 8px 10px;
-    color: #fff;
+    color: var(--color-BWhite);
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -99,7 +99,7 @@
 
 .language-switcher-item:hover,
 .language-switcher-item:focus {
-    background-color: #009A44;
+    background-color: var(--color-BGreen);
     outline: none;
     border-radius: 7px;
     transition: background-color 0.3s ease, border-color 0.3s ease;

@@ -28,6 +28,14 @@ const selectors = [
     '.css-177ip5v-MuiTypography-root',
     '.css-hav9kw-MuiTypography-root',
     '.css-ol7wxs-MuiTypography-root',
+    '.css-ahj2mt-MuiTypography-root',
+    '.css-1vw6mcs-MuiTypography-root',
+    '.css-vtncvo-MuiTypography-root',
+    '.BbRtadZawZJ1QXQAlzRG h5', // Footer share your thoughts
+    '.BbRtadZawZJ1QXQAlzRG h6', // Footer Links Heading
+    '.J_yBuGNdyAbTehoIEu1Z a', // Footer Links
+    '.css-37jdci-MuiTypography-root', // Footer UND contains
+    '.dfqj7miLZJmg3aczuuzL svg ', // Footer social media logo
     '.navLink'
 ];
 
