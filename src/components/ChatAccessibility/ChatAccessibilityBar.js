@@ -53,17 +53,23 @@ const ChatAccessibilityButton = () => {
         {
             icon: isHighContrast ? <FormatColorResetIcon /> : <ColorLensIcon />,
             name: isHighContrast ? 'Normal Contrast' : 'High Contrast',
-            onClick: toggleHighContrast,
+            onClick: () => {
+                toggleHighContrast();
+            }
         },
         {
             icon: isSoftContrast ? <InvertColorsOffIcon /> : <InvertColors />,
             name: isSoftContrast ? 'Normal Contrast' : 'Soft Contrast',
-            onClick: toggleSoftContrast,
+            onClick: () => {
+                toggleSoftContrast();
+            },
         },
         {
             icon: isReadingAloud ? <StopIcon /> : <VolumeUpIcon />,
             name: isReadingAloud ? 'Stop Reading' : 'Read Aloud',
-            onClick: toggleReadAloud,
+            onClick: () => {
+                toggleReadAloud();
+            }
         },
         {
             icon: <RestartAltIcon />,
