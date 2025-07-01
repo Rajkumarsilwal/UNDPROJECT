@@ -189,8 +189,10 @@ const ChatAccessibilityButton = () => {
                                         fontSize: isSmallScreen ? '0.55rem' : '0.65rem',
                                         lineHeight: 1.2,
                                         backgroundColor: '#ccc',
+                                        transition: 'background-color 0.3s ease, color 0.3s ease',
                                         '&:hover': {
-                                            backgroundColor: '#b3b3b3',
+                                            backgroundColor: '#1565c0',
+                                            color: 'var(--color-BWhite)'
                                         },
                                     }}
                                 >
