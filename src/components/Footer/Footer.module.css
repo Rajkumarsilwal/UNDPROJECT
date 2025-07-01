@@ -1,6 +1,6 @@
 .footerRoot {
-    background-color: #000;
-    color: #fff;
+    background-color: var(--color-BBlack);
+    color: var(--color-Bwhite);
     padding: 1rem 1rem;
     font-family: var(--font-family);
 }
@@ -53,7 +53,7 @@
 
 .ctaHeading,
 .ctaSubheading {
-    color: #fff;
+    color: var(--color-Bwhite);
     margin: 0.2rem 0;
     font-family: var(--font-family) !important;
 }
@@ -116,7 +116,7 @@
 }
 
 .linkList a:hover {
-    color: #009A44;
+    color: var(--color-);
     text-decoration: underline;
     font-weight: bold;
     transform: translateY(-2px);
@@ -130,12 +130,12 @@
 }
 
 .socialIcons a {
-    color: #fff;
+    color: var(--color-Bwhite);
     transition: color 0.3s;
 }
 
 .socialIcons a:hover {
-    color: #009A44;
+    color: var(--color-BGreen);
     text-decoration: underline;
     font-weight: bold;
     transform: translateY(-4px);

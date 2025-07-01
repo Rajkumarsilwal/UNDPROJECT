@@ -26,7 +26,7 @@
 .navList {
     margin: 0;
     padding: 0;
-    color: #000;
+    color: var(--color-BBlack);
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -64,7 +64,7 @@
 }
 
 .navLink {
-    color: #000;
+    color: var(--color-BBlack);
     text-decoration: none;
     font-weight: 600;
     font-size: 1.3rem;
@@ -83,6 +83,6 @@
 }
 
 .navLink:focus {
-    outline: 2px solid #000;
+    outline: 2px solid var(--color-BBlack);
     outline-offset: 2px;
 }
