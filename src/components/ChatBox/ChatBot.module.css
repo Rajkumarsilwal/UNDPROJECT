@@ -64,7 +64,7 @@
 
 .userMessage {
     background: #dcf8c6;
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: var(--font-family);
     padding: 8px 12px;
     border-radius: 12px;
     display: inline-block;
@@ -72,7 +72,7 @@
 }
 
 .botMessage {
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: var(--font-family);
     background: #e0e0e0;
     padding: 8px 12px;
     border-radius: 12px;
@@ -88,7 +88,7 @@
 .inputField {
     flex: 1;
     border: none;
-    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+    font-family: var(--font-family);
     padding: 10px;
     outline: none;
     font-size: medium;
