@@ -26,7 +26,7 @@
 
 .header {
     padding: 10px;
-    background: #009A44;
+    background: var(--color-BGreen);
     color: #fff;
     display: flex;
     justify-content: space-between;
@@ -37,7 +37,7 @@
 .closeButton {
     background: none;
     border: none;
-    color: #fff;
+    color: var(--color-BWhite);
     font-size: 18px;
     cursor: pointer;
 }
@@ -96,8 +96,8 @@
 
 .sendButton {
     padding: 10px;
-    background: #009A44;
-    color: #fff;
+    background: var(--color-BGreen);
+    color: var(--color-BWhite);
     border: none;
     cursor: pointer;
     font-weight: bold;
@@ -106,8 +106,8 @@
 .toggleButton {
     width: 100%;
     height: 100%;
-    background: #009A44;
-    color: #fff;
+    background: var(--color-BGreen);
+    color: var(--color-BWhite);
     font-size: 40px;
     border: none;
     border-radius: 15px;

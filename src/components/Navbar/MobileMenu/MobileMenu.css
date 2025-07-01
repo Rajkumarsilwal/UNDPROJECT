@@ -1,6 +1,6 @@
 /* Toggle Button Styles */
 .mobile-menu-button {
-    color: #009A44 !important;
+    color: var(--color-BGreen) !important;
     font-size: 40px !important;
     width: 48px !important;
     height: 55px !important;
@@ -25,7 +25,7 @@
     width: 100%;
     z-index: 999;
     border-top: 1px solid #444;
-    color: #fff;
+    color: var(--color-BWhite);
     padding: 10px 0;
 }
 
@@ -50,5 +50,5 @@
 
 .mobile-menu-link-text:hover,
 .mobile-menu-link-text:focus {
-    color: #009A44 !important;
+    color: var(--color-BGreen) !important;
 }

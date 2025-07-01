@@ -1,6 +1,9 @@
 :root {
   --base-font: 16px;
   --font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --color-BGreen: #009A44;
+  --color-BWhite: #fff;
+  --color-BBlack: #000;
 }
 
 html {
@@ -22,8 +25,6 @@ html {
   text-align: center;
 }
 
-
-/* PresidentEndorsement font for PresidentEndorsement  */
 body {
   font-family: var(--font-family);
   margin: 0;
@@ -31,8 +32,7 @@ body {
   line-height: 1.6;
 }
 
-/* 
-App.js CSS properties */
+
 /* Main App Container */
 .app-container {
   display: flex;
@@ -42,7 +42,7 @@ App.js CSS properties */
 
 /* App Header (Navbar) */
 .app-header {
-  background-color: black !important;
+  background-color: var(--color-BBlack) !important;
   z-index: 1300;
 }
 
@@ -53,7 +53,7 @@ App.js CSS properties */
   height: 75px;
   padding-left: 16px;
   padding-right: 16px;
-  background-color: black;
+  background-color: var(--color-BBlack);
 }
 
 /* Logo Container */
@@ -61,7 +61,7 @@ App.js CSS properties */
   display: flex;
   align-items: center;
   gap: 3px;
-  background-color: black;
+  background-color: var(--color-BBlack);
 }
 
 /* Site Logo */
@@ -74,9 +74,9 @@ App.js CSS properties */
 }
 
 /* Logo Size for Small Screens (Mobile) */
-@media (min-width: 451px) and (max-width: 700px) {
+@media (min-width: 451px) and (max-width: 750px) {
   .app-logo {
-    height: 50px;
+    height: 60x;
     max-width: 80%;
   }
 }
@@ -90,9 +90,9 @@ App.js CSS properties */
 
 /* Desktop Navigation Menu Container */
 .app-desktop-nav-container {
-  background-color: #FFF;
-  border-top: 2px solid #009A44;
-  border-bottom: 2px solid #009A44;
+  background-color: var(--color-BWhite);
+  border-top: 2px solid var(--color-BGreen);
+  border-bottom: 2px solid var(--color-BGreen);
   ;
 }
 
