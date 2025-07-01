@@ -1,6 +1,6 @@
 .footerRoot {
     background-color: var(--color-BBlack);
-    color: var(--color-Bwhite);
+    color: var(--color-BWhite);
     padding: 1rem 1rem;
     font-family: var(--font-family);
 }
@@ -53,7 +53,7 @@
 
 .ctaHeading,
 .ctaSubheading {
-    color: var(--color-Bwhite);
+    color: var(--color-BWhite);
     margin: 0.2rem 0;
     font-family: var(--font-family) !important;
 }
@@ -130,7 +130,7 @@
 }
 
 .socialIcons a {
-    color: var(--color-Bwhite);
+    color: var(--color-BWhite);
     transition: color 0.3s;
 }
 
