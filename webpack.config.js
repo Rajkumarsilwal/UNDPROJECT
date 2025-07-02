@@ -11,7 +11,7 @@ module.exports = {
         path: path.resolve(__dirname, 'dist'),
         clean: true,  // It will delete the output directory when new build is run
     },
-    mode: 'development',
+    mode: process.env.NODE_ENV === 'production' ? 'production' : 'development',
     module: {
         rules: [
             {

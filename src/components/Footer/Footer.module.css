@@ -116,7 +116,7 @@
 }
 
 .linkList a:hover {
-    color: var(--color-);
+    color: var(--color-BGreen);
     text-decoration: underline;
     font-weight: bold;
     transform: translateY(-2px);
