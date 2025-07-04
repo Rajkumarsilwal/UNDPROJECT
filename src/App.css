@@ -142,7 +142,7 @@ body {
 
 /* Specific styles for PresidentEndorsement */
 /* h1 for main heading i.e: President's Endorsement */
-.president-endorsement h1 {
+.president-endorsement h2 {
   font-size: clamp(1.5rem, 3.5vw, 1.95rem);
   font-weight: bold;
   text-align: left;
@@ -154,18 +154,20 @@ body {
 
 /* h2 for secondary heading i.e. message from the president
    and Campaign Goals */
-.president-endorsement h2 {
+.president-endorsement h3 {
   font-size: clamp(1.35rem, 3vw, 1.65rem);
   font-weight: bold;
   text-align: left;
 }
 
 /* h3 for heading under Campiagn Goals */
-.president-endorsement h3 {
+.president-endorsement h4 {
   font-size: clamp(1.15rem, 2.5vw, 1.4rem);
   font-weight: bold;
   text-align: left;
 }
+
+
 
 .president-endorsement p {
   font-size: clamp(1rem, 1.5vw, 1.15rem);

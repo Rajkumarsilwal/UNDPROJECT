@@ -21,12 +21,12 @@ const PresidentEndorsement = () => {
       <div className="president-endorsement">
 
         {/* Title Section */}
-        <Typography variant='h4' component='h1' gutterBottom>
+        <Typography variant='h4' component='h2' gutterBottom>
           {lang.president.presidentsEndorsement}
         </Typography>
 
         {/* Message from the President */}
-        <Typography variant='h6' component='h2' gutterBottom>
+        <Typography variant='h6' component='h3' gutterBottom>
           {lang.president.messageFromPresident}
         </Typography>
 
@@ -36,12 +36,12 @@ const PresidentEndorsement = () => {
         </Typography>
 
         {/* Section: Campaign Goals */}
-        <Typography variant='h6' component='h2' gutterBottom>
+        <Typography variant='h6' component='h3' gutterBottom>
           {lang.president.campaignGoals}
         </Typography>
 
         {/* Goal 1 */}
-        <Typography variant='h6' component='h3' gutterBottom>
+        <Typography variant='h6' component='h4' gutterBottom>
           {lang.president.goal1Title}
         </Typography>
 
@@ -51,7 +51,7 @@ const PresidentEndorsement = () => {
         </Typography>
 
         {/* Goal 2 */}
-        <Typography variant='h6' component='h3' gutterBottom>
+        <Typography variant='h6' component='h4' gutterBottom>
           {lang.president.goal2Title}
         </Typography>
 
@@ -61,7 +61,7 @@ const PresidentEndorsement = () => {
         </Typography>
 
         {/* Goal 3 */}
-        <Typography variant='h6' component='h3' gutterBottom>
+        <Typography variant='h6' component='h4' gutterBottom>
           {lang.president.goal3Title}
         </Typography>
 

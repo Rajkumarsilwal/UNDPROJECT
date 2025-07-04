@@ -69,7 +69,7 @@ function App() {
           <Box className="app-endorsement-section" aria-labelledby="president-endorsement-heading">
             <PresidentEndorsement />
           </Box>
-          <Box className="app-about-president-section" aria-labelledby="about-president-heading">
+          <Box className="app-about-president-section" aria-labelledby="about-president-heading" component="aside">
             <AboutPresident />
           </Box>
         </Box>

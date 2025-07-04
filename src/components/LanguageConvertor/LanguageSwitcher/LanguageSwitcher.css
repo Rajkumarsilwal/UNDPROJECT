@@ -99,6 +99,7 @@
 
 .language-switcher-item:hover,
 .language-switcher-item:focus {
+    color: var(--color-BBlack);
     background-color: var(--color-BGreen);
     outline: none;
     border-radius: 7px;

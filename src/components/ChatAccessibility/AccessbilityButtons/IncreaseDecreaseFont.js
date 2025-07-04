@@ -15,12 +15,12 @@ const selectors = [
     '.Footer_footerRoot__y8cjJ h5',
     '.Footer_footerRoot__y8cjJ',
     '.Footer_socialIcons__JZqJ0 svg',
-    '.president-endorsement p',
     '.AboutPresident_aboutPresidentTitle__Egmzh',
     '.AboutPresident_aboutPresidentText__Ii7zM',
+    '.president-endorsement p',
+    '.president-endorsement h4',
     '.president-endorsement h3',
     '.president-endorsement h2',
-    '.president-endorsement h1',
     '.mobile-menu-link-text',
     '.css-2ulfj5-MuiTypography-root', // Fot postcard name
     '.css-ol7wxs-MuiTypography-root', // For postcard Location, Likes and Reposts
