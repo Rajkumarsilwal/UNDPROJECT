@@ -13,7 +13,7 @@ const TaglineSection = () => {
             id="headTitleTagline"
             className={styles.headTitleTagline}
             role="heading"
-            variant="h5"
+            variant="h1"
         >
             &quot;{tagline}&quot;
         </Typography>
