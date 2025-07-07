@@ -35,7 +35,9 @@ const selectors = [
     '.BbRtadZawZJ1QXQAlzRG h6', // Footer Links Heading
     '.J_yBuGNdyAbTehoIEu1Z a', // Footer Links
     '.css-37jdci-MuiTypography-root', // Footer UND contains
-    '.dfqj7miLZJmg3aczuuzL svg ', // Footer social media logo
+    '.dfqj7miLZJmg3aczuuzL svg', // Footer social media logo
+    '.HfPsxrwCahDLwEBFT6ep', // About The President
+    '.sisaFlQI54dN0AzIeSSF', // Abt the president - Content
     '.navLink'
 ];
 
