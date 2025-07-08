@@ -12,7 +12,7 @@ const Footer = () => {
   const lang = language || defaultLanguage;
 
   return (
-    <Box component="footer" className={style.footerRoot} role="contentinfo">
+    <Box component="footer" className={style.footerRoot} role="contentinfo" id="footer-content">
       <Container maxWidth="lg">
         <Box className={style.ctaSection}>
           <Box>
