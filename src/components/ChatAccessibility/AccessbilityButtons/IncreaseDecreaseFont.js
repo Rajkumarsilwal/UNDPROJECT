@@ -7,14 +7,6 @@ const selectors = [
     '#post-list',
     '#search-posts-label',
     '#search-posts',
-    '#footer-und-heading',
-    '#footer-quick-links',
-    '#footer-company-heading',
-    '#footer-legal-heading',
-    '#footer-social-heading',
-    '.Footer_footerRoot__y8cjJ h5',
-    '.Footer_footerRoot__y8cjJ',
-    '.Footer_socialIcons__JZqJ0 svg',
     '.AboutPresident_aboutPresidentTitle__Egmzh',
     '.AboutPresident_aboutPresidentText__Ii7zM',
     '.president-endorsement p',
@@ -22,12 +14,9 @@ const selectors = [
     '.president-endorsement h3',
     '.president-endorsement h2',
     '.mobile-menu-link-text',
-    '.post-card-box-contains *',
-    '.BbRtadZawZJ1QXQAlzRG h5', // Footer share your thoughts
-    '.BbRtadZawZJ1QXQAlzRG h6', // Footer Links Heading
-    '.J_yBuGNdyAbTehoIEu1Z a', // Footer Links
-    '.css-37jdci-MuiTypography-root', // Footer UND contains
-    '.dfqj7miLZJmg3aczuuzL svg', // Footer social media logo
+    '.post-card *',                 // post-card
+    '.post-card-box-contains *',    // post-card
+    '#footer-content *', // Footer content
     '.HfPsxrwCahDLwEBFT6ep', // About The President
     '.sisaFlQI54dN0AzIeSSF', // Abt the president - Content
     '.navLink'
@@ -45,7 +34,6 @@ export default function useFontScaling(step = 2, min = 16, max = 36) {
             document.querySelectorAll(sel).forEach((el) => {
                 if (seen.has(el)) return;
                 seen.add(el);
-                console.log('el style values::', el);
                 const currentSize = getFontSize(el);
                 const newSize = Math.min(currentSize + step, max);
                 el.style.setProperty('font-size', `${newSize}px`, 'important');
