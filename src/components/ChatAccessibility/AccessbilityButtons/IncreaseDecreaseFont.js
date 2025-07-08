@@ -22,6 +22,7 @@ const selectors = [
     '.president-endorsement h3',
     '.president-endorsement h2',
     '.mobile-menu-link-text',
+    '.post-card *',
     '.post-card-box-contains *',
     '.BbRtadZawZJ1QXQAlzRG h5', // Footer share your thoughts
     '.BbRtadZawZJ1QXQAlzRG h6', // Footer Links Heading
@@ -45,7 +46,6 @@ export default function useFontScaling(step = 2, min = 16, max = 36) {
             document.querySelectorAll(sel).forEach((el) => {
                 if (seen.has(el)) return;
                 seen.add(el);
-                console.log('el style values::', el);
                 const currentSize = getFontSize(el);
                 const newSize = Math.min(currentSize + step, max);
                 el.style.setProperty('font-size', `${newSize}px`, 'important');
