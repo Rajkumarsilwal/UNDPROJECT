@@ -107,6 +107,7 @@ const PostList = () => {
           {currentPosts.map((post) => (
             <Card
               key={post.id}
+              className="post-card"
               variant="outlined"
               sx={{ mb: 2 }}
               role="article"
@@ -118,7 +119,7 @@ const PostList = () => {
                   alt={`Avatar of ${post.author}`}
                   sx={{ width: 56, height: 56 }}
                 />
-                <Box>
+                <Box className="post-card-box-contains">
                   {/* Author Name as Heading */}
                   <Typography variant="h6" component="h2">
                     {highlightText(post.author, searchTerm)}
